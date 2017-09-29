@@ -1,0 +1,48 @@
+body {
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex: 1;
+}
+
+.bg-primary {
+	background: #1c3d6c !important;
+}
+
+.btn {
+	cursor: pointer;
+}
+
+.btn-outline-light:hover {
+	color: #353535;
+}
+
+.footer {
+	font-size: 1.2rem;
+	background: #252525 !important;
+	min-height: 5rem;
+	align-items: center;
+	display: flex;
+	padding: .2rem 2rem;
+}
+
+.text-muted {
+	color: #ebebeb !important;
+	font-weight: 300;
+	opacity: .8;
+}
+
+a.link {
+	color: #fefefe;
+	font-weight: 300;
+	transition: all .3s ease;
+}
+
+a.link:hover {
+	text-decoration: none;
+	color: #a0a0a0;
+}
