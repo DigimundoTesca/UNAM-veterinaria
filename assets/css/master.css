@@ -1,48 +1,66 @@
 body {
-	font-size: 18px;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#mainBar {
+  min-height: 250px;
+}
+.imageContainer {
+  max-width: 550px;
+}
+.logIn {
+  margin: 0;
+  padding: 0;
+}
+.animals {
+  width: 400px;
+}
+.animals img {
+  width: 100px;
+  height: 100px;
+  margin: 15px;
 }
 
 main {
-	flex: 1;
+  flex: 1;
 }
 
 .bg-primary {
-	background: #1c3d6c !important;
+  background: #1c3d6c !important;
 }
 
 .btn {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .btn-outline-light:hover {
-	color: #353535;
+  color: #353535;
 }
 
 .footer {
-	font-size: 1.2rem;
-	background: #252525 !important;
-	min-height: 5rem;
-	align-items: center;
-	display: flex;
-	padding: .2rem 2rem;
+  font-size: 1.2rem;
+  background: #252525 !important;
+  min-height: 5rem;
+  align-items: center;
+  display: flex;
+  padding: .2rem 2rem;
 }
 
 .text-muted {
-	color: #ebebeb !important;
-	font-weight: 300;
-	opacity: .8;
+  color: #ebebeb !important;
+  font-weight: 300;
+  opacity: .8;
 }
 
 a.link {
-	color: #fefefe;
-	font-weight: 300;
-	transition: all .3s ease;
+  color: #fefefe;
+  font-weight: 300;
+  transition: all .3s ease;
 }
 
 a.link:hover {
-	text-decoration: none;
-	color: #a0a0a0;
+  text-decoration: none;
+  color: #a0a0a0;
 }
