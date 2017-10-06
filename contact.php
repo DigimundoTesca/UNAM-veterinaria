@@ -10,11 +10,13 @@
 
 // Multiple recipients
   $recipients = array(
-    'itzli2000@msn.com',
+    'ceo@digimundo.com.mx',
     'frontend@digimundo.com.mx',
+    'itzli2000@msn.com',
   );
   $to = implode(',', $recipients);
   $from_mailto = $_POST['itzli2000@msn.com'];
+  $patient_animal = $_POST['animal'];
   $patient_weight = $_POST['Peso'];
   $patient_gender = $_POST['Sexo'];
   $patient_physiological = $_POST['Estado_fisiologico'];
@@ -39,7 +41,7 @@
   <h2>'.$patient_quickQ.'</h2>
   <p> Mensaje: <br>'. $patient_question .'</p>
   <h4>Datos del animal:</h4>
-  <p>Peso: '.$patient_weight.' <br> Sexo: '.$patient_gender.' <br>Estado fisiológico: '.$patient_physiological.' <br>Frecuencia cardiaca: '. $patient_fc .' <br>Frecuencia respiratoria: '. $patient_fr .' <br>Temperatura: '. $patient_temp .' <br>Movimientos ruminales: '. $patient_ruminal .' <br>Historia clínica: '. $patient_clinical .' </p>
+  <p>Espécimen: '.$patient_animal.'<br>Peso: '.$patient_weight.' <br> Sexo: '.$patient_gender.' <br>Estado fisiológico: '.$patient_physiological.' <br>Frecuencia cardiaca: '. $patient_fc .' <br>Frecuencia respiratoria: '. $patient_fr .' <br>Temperatura: '. $patient_temp .' <br>Movimientos ruminales: '. $patient_ruminal .' <br>Historia clínica: '. $patient_clinical .' </p>
   </body>
   </html>
   ';

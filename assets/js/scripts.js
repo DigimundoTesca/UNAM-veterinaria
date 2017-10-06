@@ -1,7 +1,6 @@
 $(document).ready(function() {
-  $("#mailitbtn").on("click", function(e) {
-      e.preventDefault(); //This is to Avoid Page Refresh and Fire the Event "Click"
-      let form = $('#mailit');
+    $(".mailitbtn").on("click", function(e) {
+      e.preventDefault();
       swal({
         title: "Su pregunta será enviada!",
         text: "Espere pronto una respuesta",
@@ -9,24 +8,126 @@ $(document).ready(function() {
         showCancelButton: false,
         confirmButtonText: "Entendido",
         confirmButtonClass: 'btn btn-success'
-      }).then(function () {
-          // sendmail();
+        }).then(function () {
+          document.vacaquest.submit();
         });
     });
-
-  // function sendmail() {
-  //   $("form.container").submit(function(e) {
-  //     e.preventDefault();
-  //     var data = $(this).serialize();
-  //     var url = $(this).attr('action');
-  //     var form = $(this);
-  //     $.post(url,data,function(data){
-  //       $(.result).html(data.result+"Watchlist");
-  //     });
-  //     return false;
-  //   });
-  // }
-
-
+    $(".caballomailitbtn").on("click", function(e) {
+      e.preventDefault();
+      swal({
+        title: "Su pregunta será enviada!",
+        text: "Espere pronto una respuesta",
+        type: "success",
+        showCancelButton: false,
+        confirmButtonText: "Entendido",
+        confirmButtonClass: 'btn btn-success'
+        }).then(function () {
+          document.caballoquest.submit();
+        });
+    });
+    $(".ovejamailitbtn").on("click", function(e) {
+      e.preventDefault();
+      swal({
+        title: "Su pregunta será enviada!",
+        text: "Espere pronto una respuesta",
+        type: "success",
+        showCancelButton: false,
+        confirmButtonText: "Entendido",
+        confirmButtonClass: 'btn btn-success'
+        }).then(function () {
+          document.ovejaquest.submit();
+        });
+    });
+    $(".cerdomailitbtn").on("click", function(e) {
+      e.preventDefault();
+      swal({
+        title: "Su pregunta será enviada!",
+        text: "Espere pronto una respuesta",
+        type: "success",
+        showCancelButton: false,
+        confirmButtonText: "Entendido",
+        confirmButtonClass: 'btn btn-success'
+        }).then(function () {
+          document.cerdoquest.submit();
+        });
+    });
+    $(".conejomailitbtn").on("click", function(e) {
+      e.preventDefault();
+      swal({
+        title: "Su pregunta será enviada!",
+        text: "Espere pronto una respuesta",
+        type: "success",
+        showCancelButton: false,
+        confirmButtonText: "Entendido",
+        confirmButtonClass: 'btn btn-success'
+        }).then(function () {
+          document.conejoquest.submit();
+        });
+    });
+    $(".gallomailitbtn").on("click", function(e) {
+      e.preventDefault();
+      swal({
+        title: "Su pregunta será enviada!",
+        text: "Espere pronto una respuesta",
+        type: "success",
+        showCancelButton: false,
+        confirmButtonText: "Entendido",
+        confirmButtonClass: 'btn btn-success'
+        }).then(function () {
+          document.galloquest.submit();
+        });
+    });
+    $(".avemailitbtn").on("click", function(e) {
+      e.preventDefault();
+      swal({
+        title: "Su pregunta será enviada!",
+        text: "Espere pronto una respuesta",
+        type: "success",
+        showCancelButton: false,
+        confirmButtonText: "Entendido",
+        confirmButtonClass: 'btn btn-success'
+        }).then(function () {
+          document.avequest.submit();
+        });
+    });
+    $(".perromailitbtn").on("click", function(e) {
+      e.preventDefault();
+      swal({
+        title: "Su pregunta será enviada!",
+        text: "Espere pronto una respuesta",
+        type: "success",
+        showCancelButton: false,
+        confirmButtonText: "Entendido",
+        confirmButtonClass: 'btn btn-success'
+        }).then(function () {
+          document.perroquest.submit();
+        });
+    });
+    $(".gatomailitbtn").on("click", function(e) {
+      e.preventDefault();
+      swal({
+        title: "Su pregunta será enviada!",
+        text: "Espere pronto una respuesta",
+        type: "success",
+        showCancelButton: false,
+        confirmButtonText: "Entendido",
+        confirmButtonClass: 'btn btn-success'
+        }).then(function () {
+          document.gatoquest.submit();
+        });
+    });
+    $(".faunamailitbtn").on("click", function(e) {
+      e.preventDefault();
+      swal({
+        title: "Su pregunta será enviada!",
+        text: "Espere pronto una respuesta",
+        type: "success",
+        showCancelButton: false,
+        confirmButtonText: "Entendido",
+        confirmButtonClass: 'btn btn-success'
+        }).then(function () {
+          document.faunaquest.submit();
+        });
+    });
 });
 
