@@ -59,18 +59,17 @@
       <div class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
         <p class="h3 text-center text-uppercase pt-5 pb-3">Realiza una pregunta</p>
         <div class="animals m-auto d-flex flex-row flex-wrap">
-          <a data-toggle="modal" data-dismiss="modal" data-target="#vacaModal"><img src="assets/images/animal/vaca.jpg" alt="animal icon"></a>
-          <a data-toggle="modal" data-dismiss="modal" data-target="#cerdoModal"><img src="assets/images/animal/cerdo.jpg" alt="animal icon"></a>
-          <a data-toggle="modal" data-dismiss="modal" data-target="#caballoModal"><img src="assets/images/animal/caballo.jpg" alt="animal icon"></a>
-          <a data-toggle="modal" data-dismiss="modal" data-target="#ovejaModal"><img src="assets/images/animal/oveja.jpg" alt="animal icon"></a>
-          <a data-toggle="modal" data-dismiss="modal" data-target="#galloModal"><img src="assets/images/animal/gallo.jpg" alt="animal icon"></a>
-          <a data-toggle="modal" data-dismiss="modal" data-target="#conejoModal"><img src="assets/images/animal/conejo.jpg" alt="animal icon"></a>
-          <a data-toggle="modal" data-dismiss="modal" data-target="#exampleModal"><img src="assets/images/animal/cerdo.jpg" alt="animal icon"></a>
-          <a data-toggle="modal" data-dismiss="modal" data-target="#exampleModal"><img src="assets/images/animal/caballo.jpg" alt="animal icon"></a>
-          <a data-toggle="modal" data-dismiss="modal" data-target="#exampleModal"><img src="assets/images/animal/oveja.jpg" alt="animal icon"></a>
-          <a data-toggle="modal" data-dismiss="modal" data-target="#exampleModal"><img src="assets/images/animal/gallo.jpg" alt="animal icon"></a>
-          <a data-toggle="modal" data-dismiss="modal" data-target="#exampleModal"><img src="assets/images/animal/vaca.jpg" alt="animal icon"></a>
-          <a data-toggle="modal" data-dismiss="modal" data-target="#exampleModal"><img src="assets/images/animal/cerdo.jpg" alt="animal icon"></a>
+          <a data-toggle="modal" data-dismiss="modal" data-target="#vacaModal"><img src="assets/images/animal/vaca.png" alt="animal icon"></a>
+          <a data-toggle="modal" data-dismiss="modal" data-target="#cerdoModal"><img src="assets/images/animal/cerdo.png" alt="animal icon"></a>
+          <a data-toggle="modal" data-dismiss="modal" data-target="#caballoModal"><img src="assets/images/animal/caballo.png" alt="animal icon"></a>
+          <a data-toggle="modal" data-dismiss="modal" data-target="#ovejaModal"><img src="assets/images/animal/oveja.png" alt="animal icon"></a>
+          <a data-toggle="modal" data-dismiss="modal" data-target="#galloModal"><img src="assets/images/animal/gallo.png" alt="animal icon"></a>
+          <a data-toggle="modal" data-dismiss="modal" data-target="#conejoModal"><img src="assets/images/animal/conejo.png" alt="animal icon"></a>
+          <a data-toggle="modal" data-dismiss="modal" data-target="#avesModal"><img src="assets/images/animal/pato.png" alt="animal icon"></a>
+          <a data-toggle="modal" data-dismiss="modal" data-target="#perroModal"><img src="assets/images/animal/perro.png" alt="animal icon"></a>
+          <a data-toggle="modal" data-dismiss="modal" data-target="#gatoModal"><img src="assets/images/animal/gato.png" alt="animal icon"></a>
+          <a data-toggle="modal" data-dismiss="modal" data-target="#silvestreModal"><img src="assets/images/animal/oveja.jpg" alt="animal icon"></a>
+          
         </div>
       </div>
       <main id="foroMain" class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
@@ -744,6 +743,346 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Nueva pregunta (Gallo)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="contact.php" class="container" id="mailit needs-validation" role="form" novalidate>
+          <div class="form-group">
+            <label for="Peso" class="col-form-label">Peso</label>
+            <input type="text" class="form-control" id="Peso" name="Peso" placeholder="0 - 800kg">
+          </div>
+          <fieldset class="form-group">
+            <div class="form-group">
+              <legend class="col-form-legend">Sexo</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="Sexo" id="Sexo1" value="macho" checked>
+                    Macho
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="Sexo" id="Sexo2" value="hembra">
+                    Hembra
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <label for="Estado_fisiologico" class="col-form-label">Estado Fisiológico</label>
+            <input type="text" class="form-control" id="Estado_fisiologico" name="Estado_fisiologico" placeholder="Lactante / Gestante / Crecimiento">
+          </div>
+          <hr>
+          <div class="form-group">
+            <h3>Signos</h3>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="FC" class="col-form-label">Frecuencia Cardiaca</label>
+                <input type="text" class="form-control" id="FC" name="FC">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="FR" class="col-form-label">Frecuencia Respiratoria</label>
+                <input type="text" class="form-control" id="FR" name="FR">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="Temp" class="col-form-label">Temperatura</label>
+                <input type="text" class="form-control" id="Temp" name="Temp">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="MovRum" class="col-form-label">Movimientos Ruminales</label>
+              <input type="text" class="form-control" id="MovRum" name="MovRum">
+            </div>
+            <div class="form-group">
+              <label for="Clinica">Historia Clínica</label>
+              <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
+            </div>
+          </div>
+          <hr>
+          <h3>Realiza tu pregunta</h3>
+          <div class="form-group">
+            <label for="pregunta">Pregunta (De forma corta y precisa)</label>
+            <input type="text" class="form-control" id="pregunta" name="pregunta">
+          </div>
+          <div class="form-group">
+            <label for="pregLarga">Anexa más información sobre tu pregunta</label>
+            <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+          </div>
+          <input id="mailitbtn" type="submit" name="submit" class="btn btn-success" value="Crear Pregunta" />
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal">Regresar</button>
+        <button type="button" class="btn btn-primary">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Aves -->
+<div class="modal fade" id="avesModal" tabindex="-1" role="dialog" aria-labelledby="avesModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nueva pregunta (Aves)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="contact.php" class="container" id="mailit needs-validation" role="form" novalidate>
+          <div class="form-group">
+            <label for="Peso" class="col-form-label">Peso</label>
+            <input type="text" class="form-control" id="Peso" name="Peso" placeholder="0 - 800kg">
+          </div>
+          <fieldset class="form-group">
+            <div class="form-group">
+              <legend class="col-form-legend">Sexo</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="Sexo" id="Sexo1" value="macho" checked>
+                    Macho
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="Sexo" id="Sexo2" value="hembra">
+                    Hembra
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <label for="Estado_fisiologico" class="col-form-label">Estado Fisiológico</label>
+            <input type="text" class="form-control" id="Estado_fisiologico" name="Estado_fisiologico" placeholder="Lactante / Gestante / Crecimiento">
+          </div>
+          <hr>
+          <div class="form-group">
+            <h3>Signos</h3>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="FC" class="col-form-label">Frecuencia Cardiaca</label>
+                <input type="text" class="form-control" id="FC" name="FC">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="FR" class="col-form-label">Frecuencia Respiratoria</label>
+                <input type="text" class="form-control" id="FR" name="FR">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="Temp" class="col-form-label">Temperatura</label>
+                <input type="text" class="form-control" id="Temp" name="Temp">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="MovRum" class="col-form-label">Movimientos Ruminales</label>
+              <input type="text" class="form-control" id="MovRum" name="MovRum">
+            </div>
+            <div class="form-group">
+              <label for="Clinica">Historia Clínica</label>
+              <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
+            </div>
+          </div>
+          <hr>
+          <h3>Realiza tu pregunta</h3>
+          <div class="form-group">
+            <label for="pregunta">Pregunta (De forma corta y precisa)</label>
+            <input type="text" class="form-control" id="pregunta" name="pregunta">
+          </div>
+          <div class="form-group">
+            <label for="pregLarga">Anexa más información sobre tu pregunta</label>
+            <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+          </div>
+          <input id="mailitbtn" type="submit" name="submit" class="btn btn-success" value="Crear Pregunta" />
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal">Regresar</button>
+        <button type="button" class="btn btn-primary">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Perros -->
+<div class="modal fade" id="perroModal" tabindex="-1" role="dialog" aria-labelledby="perroModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nueva pregunta (Perro)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="contact.php" class="container" id="mailit needs-validation" role="form" novalidate>
+          <div class="form-group">
+            <label for="Peso" class="col-form-label">Peso</label>
+            <input type="text" class="form-control" id="Peso" name="Peso" placeholder="0 - 800kg">
+          </div>
+          <fieldset class="form-group">
+            <div class="form-group">
+              <legend class="col-form-legend">Sexo</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="Sexo" id="Sexo1" value="macho" checked>
+                    Macho
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="Sexo" id="Sexo2" value="hembra">
+                    Hembra
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <label for="Estado_fisiologico" class="col-form-label">Estado Fisiológico</label>
+            <input type="text" class="form-control" id="Estado_fisiologico" name="Estado_fisiologico" placeholder="Lactante / Gestante / Crecimiento">
+          </div>
+          <hr>
+          <div class="form-group">
+            <h3>Signos</h3>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="FC" class="col-form-label">Frecuencia Cardiaca</label>
+                <input type="text" class="form-control" id="FC" name="FC">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="FR" class="col-form-label">Frecuencia Respiratoria</label>
+                <input type="text" class="form-control" id="FR" name="FR">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="Temp" class="col-form-label">Temperatura</label>
+                <input type="text" class="form-control" id="Temp" name="Temp">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="MovRum" class="col-form-label">Movimientos Ruminales</label>
+              <input type="text" class="form-control" id="MovRum" name="MovRum">
+            </div>
+            <div class="form-group">
+              <label for="Clinica">Historia Clínica</label>
+              <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
+            </div>
+          </div>
+          <hr>
+          <h3>Realiza tu pregunta</h3>
+          <div class="form-group">
+            <label for="pregunta">Pregunta (De forma corta y precisa)</label>
+            <input type="text" class="form-control" id="pregunta" name="pregunta">
+          </div>
+          <div class="form-group">
+            <label for="pregLarga">Anexa más información sobre tu pregunta</label>
+            <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+          </div>
+          <input id="mailitbtn" type="submit" name="submit" class="btn btn-success" value="Crear Pregunta" />
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal">Regresar</button>
+        <button type="button" class="btn btn-primary">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gatos -->
+<div class="modal fade" id="gatoModal" tabindex="-1" role="dialog" aria-labelledby="gatoModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nueva pregunta (Gato)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="contact.php" class="container" id="mailit needs-validation" role="form" novalidate>
+          <div class="form-group">
+            <label for="Peso" class="col-form-label">Peso</label>
+            <input type="text" class="form-control" id="Peso" name="Peso" placeholder="0 - 800kg">
+          </div>
+          <fieldset class="form-group">
+            <div class="form-group">
+              <legend class="col-form-legend">Sexo</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="Sexo" id="Sexo1" value="macho" checked>
+                    Macho
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="Sexo" id="Sexo2" value="hembra">
+                    Hembra
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <label for="Estado_fisiologico" class="col-form-label">Estado Fisiológico</label>
+            <input type="text" class="form-control" id="Estado_fisiologico" name="Estado_fisiologico" placeholder="Lactante / Gestante / Crecimiento">
+          </div>
+          <hr>
+          <div class="form-group">
+            <h3>Signos</h3>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="FC" class="col-form-label">Frecuencia Cardiaca</label>
+                <input type="text" class="form-control" id="FC" name="FC">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="FR" class="col-form-label">Frecuencia Respiratoria</label>
+                <input type="text" class="form-control" id="FR" name="FR">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="Temp" class="col-form-label">Temperatura</label>
+                <input type="text" class="form-control" id="Temp" name="Temp">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="MovRum" class="col-form-label">Movimientos Ruminales</label>
+              <input type="text" class="form-control" id="MovRum" name="MovRum">
+            </div>
+            <div class="form-group">
+              <label for="Clinica">Historia Clínica</label>
+              <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
+            </div>
+          </div>
+          <hr>
+          <h3>Realiza tu pregunta</h3>
+          <div class="form-group">
+            <label for="pregunta">Pregunta (De forma corta y precisa)</label>
+            <input type="text" class="form-control" id="pregunta" name="pregunta">
+          </div>
+          <div class="form-group">
+            <label for="pregLarga">Anexa más información sobre tu pregunta</label>
+            <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+          </div>
+          <input id="mailitbtn" type="submit" name="submit" class="btn btn-success" value="Crear Pregunta" />
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal">Regresar</button>
+        <button type="button" class="btn btn-primary">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fauna Silvestre -->
+<div class="modal fade" id="silvestreModal" tabindex="-1" role="dialog" aria-labelledby="faunaModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nueva pregunta (Fauna silvestre)</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

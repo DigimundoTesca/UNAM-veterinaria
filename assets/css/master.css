@@ -34,8 +34,8 @@ body {
   cursor: pointer;
 }
 .animals img {
-  width: 150px;
-  height: 150px;
+  width: 90%;
+  height: auto;
   margin: 10px;
 }
 
