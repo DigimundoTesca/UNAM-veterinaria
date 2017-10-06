@@ -26,12 +26,17 @@ body {
   padding: 0;
 }
 .animals {
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.animals a:hover {
+  cursor: pointer;
 }
 .animals img {
-  width: 100px;
-  height: 100px;
-  margin: 15px;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
 }
 
 main {
