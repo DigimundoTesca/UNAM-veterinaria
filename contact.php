@@ -14,7 +14,7 @@
     'frontend@digimundo.com.mx',
   );
   $to = implode(',', $recipients);
-  // $to = 'itzli2000@msn.com';
+  $from_mailto = $_POST['itzli2000@msn.com'];
   $patient_weight = $_POST['Peso'];
   $patient_gender = $_POST['Sexo'];
   $patient_physiological = $_POST['Estado_fisiologico'];
@@ -47,7 +47,7 @@
 // To send HTML mail, the Content-type header must be set
 // Mail header
   $header = "Content-type: text/html; charset=".$encoding." \r\n";
-  $header .= "De: Pet Gurú \r\n";
+  $header .= "De: Pet Gurú ".$from_mailto." \r\n";
   $header .= "MIME-Version: 1.0 \r\n";
   $header .= "Content-Transfer-Encoding: 8bit \r\n";
   $header .= "Fecha: ".date("r (T)")." \r\n";
