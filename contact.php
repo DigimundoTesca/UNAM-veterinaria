@@ -11,25 +11,31 @@ if(isset($_POST['submit'])){
 
 // Multiple recipients
     $to = 'itzli2000@msn.com';
-    $from_name = $_POST['name'];
-    $from_lastname = $_POST['lastname'];
-    $from_phone = $_POST['phone'];
-    $from_mail = $_POST['email'];
-    $from_message = $_POST['message'];
+    $patient_weight = $_POST['peso'];
+    $patient_gender = $_POST['sexo'];
+    $patient_physiological = $_POST['Estado_fisiologico'];
+    $patient_fc = $_POST['FC'];
+    $patient_fr = $_POST['FR'];
+    $patient_temp = $_POST['Temp'];
+    $patient_ruminal = $_POST['MovRum'];
+    $patient_clinical = $_POST['Clinica'];
+    $patient_quickQ = $_POST['pregunta'];
+    $patient_question = $_POST['pregLarga'];
 
 // Subject
-    $subject = 'Contacto desde mi página';
+    $subject = 'Se ha creado una nueva pregunta';
 
 // Message
     $message = '
     <html>
     <head>
-      <title>Mensaje.</title>
+      <title>Nueva pregunta.</title>
   </head>
   <body>
-      <h2>Mensaje enviado desde página personal.</h2>
-      <h4>'.$from_name.' '.$from_lastname.' <br>Correo: '.$from_mail.' <br>Teléfono: '. $from_phone .' <br>Escribió lo siguiente:</h4>
-      <p> Mensaje: '. $from_message .'</p>
+      <h2>'.$patient_quickQ.'</h2>
+      <p> Mensaje: '. $patient_question .'</p>
+      <h4>Datos del animal:</h4>
+      <p>Peso: '.$patient_weight.' <br> Sexo: '.$patient_gender.' <br>Estado fisiológico: '.$patient_physiological.' <br>Frecuencia cardiaca: '. $patient_fc .' <br>Frecuencia respiratoria: '. $patient_fr .' <br>Temperatura: '. $patient_temp .' <br>Movimientos ruminales: '. $patient_ruminal .' <br>Historia clínica: '. $patient_clinical .' </p>
   </body>
   </html>
   ';
