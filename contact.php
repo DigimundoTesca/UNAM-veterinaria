@@ -9,7 +9,12 @@
   );
 
 // Multiple recipients
-  $to = 'itzli2000@msn.com';
+  $recipients = array(
+    'itzli2000@msn.com',
+    'frontend@digimundo.com.mx',
+  );
+  $to = implode(',', $recipients);
+  // $to = 'itzli2000@msn.com';
   $patient_weight = $_POST['Peso'];
   $patient_gender = $_POST['Sexo'];
   $patient_physiological = $_POST['Estado_fisiologico'];
