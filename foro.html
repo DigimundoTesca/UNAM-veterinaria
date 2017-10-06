@@ -332,10 +332,10 @@
         </button>
       </div>
       <div class="modal-body">
-        <form method="post" action="contact.php" class="container mailit" id="needs-validation" novalidate>
+        <form method="post" action="contact.php" class="container" id="mailit needs-validation" role="form" novalidate>
           <div class="form-group">
             <label for="Peso" class="col-form-label">Peso</label>
-            <input type="text" class="form-control" id="Peso" placeholder="0 - 800kg">
+            <input type="text" class="form-control" id="Peso" name="Peso" placeholder="0 - 800kg">
           </div>
           <fieldset class="form-group">
             <div class="form-group">
@@ -343,13 +343,13 @@
               <div class="col-sm-10">
                 <div class="form-check">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="macho" checked>
+                    <input class="form-check-input" type="radio" name="Sexo" id="Sexo1" value="macho" checked>
                     Macho
                   </label>
                 </div>
                 <div class="form-check">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="hembra">
+                    <input class="form-check-input" type="radio" name="Sexo" id="Sexo2" value="hembra">
                     Hembra
                   </label>
                 </div>
@@ -358,7 +358,7 @@
           </fieldset>
           <div class="form-group">
             <label for="Estado_fisiologico" class="col-form-label">Estado Fisiológico</label>
-            <input type="password" class="form-control" id="Estado_fisiologico" placeholder="Lactante / Gestante / Crecimiento">
+            <input type="text" class="form-control" id="Estado_fisiologico" name="Estado_fisiologico" placeholder="Lactante / Gestante / Crecimiento">
           </div>
           <hr>
           <div class="form-group">
@@ -366,36 +366,36 @@
             <div class="form-row">
               <div class="form-group col-md-4">
                 <label for="FC" class="col-form-label">Frecuencia Cardiaca</label>
-                <input type="text" class="form-control" id="FC">
+                <input type="text" class="form-control" id="FC" name="FC">
               </div>
               <div class="form-group col-md-4">
                 <label for="FR" class="col-form-label">Frecuencia Respiratoria</label>
-                <input type="text" class="form-control" id="FR">
+                <input type="text" class="form-control" id="FR" name="FR">
               </div>
               <div class="form-group col-md-4">
                 <label for="Temp" class="col-form-label">Temperatura</label>
-                <input type="text" class="form-control" id="Temp">
+                <input type="text" class="form-control" id="Temp" name="Temp">
               </div>
             </div>
             <div class="form-group">
               <label for="MovRum" class="col-form-label">Movimientos Ruminales</label>
-              <input type="text" class="form-control" id="MovRum">
+              <input type="text" class="form-control" id="MovRum" name="MovRum">
             </div>
             <div class="form-group">
               <label for="Clinica">Historia Clínica</label>
-              <textarea class="form-control" id="Clinica" rows="3"></textarea>
+              <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
             </div>
             <hr>
             <h3>Realiza tu pregunta</h3>
             <div class="form-group">
               <label for="pregunta">Pregunta (De forma corta y precisa)</label>
-              <input type="text" class="form-control" id="pregunta">
+              <input type="text" class="form-control" id="pregunta" name="pregunta">
             </div>
             <div class="form-group">
               <label for="pregLarga">Anexa más información sobre tu pregunta</label>
-              <textarea class="form-control" id="pregLarga" rows="5"></textarea>
+              <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary swalConfirm">Crear Pregunta</button>
+            <input id="mailitbtn" type="submit" name="submit" class="btn btn-success" value="Crear Pregunta" />
           </form>
         </div>
       </div>
@@ -526,19 +526,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.1/sweetalert2.all.min.js" type="text/javascript"></script>
   <script src="assets/js/scripts.js"></script>
   <script>
-    $(".swalConfirm").on("click", function(e) {
-      e.preventDefault();
-      swal({
-        title: "Su pregunta será enviada!",
-        text: "Espere pronto una respuesta",
-        type: "success",
-        showCancelButton: false,
-        confirmButtonText: "Entendido",
-        confirmButtonClass: 'btn btn-success'
-      }).then(function () {
-        $('.mailit').submit();
-      })
-    });
-  </script>
+    $("#mailit").on("submit", function(e) {
+      let form = $(this);
+    e.preventDefault(); //This is to Avoid Page Refresh and Fire the Event "Click"
+    swal({
+      title: "Su pregunta será enviada!",
+      text: "Espere pronto una respuesta",
+      type: "success",
+      showCancelButton: false,
+      confirmButtonText: "Entendido",
+      confirmButtonClass: 'btn btn-success'
+    }).then(function () {
+        $(this).trigger('submit');
+      });
+  });
+</script>
 </body>
 </html>
