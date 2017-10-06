@@ -526,9 +526,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.1/sweetalert2.all.min.js" type="text/javascript"></script>
   <script src="assets/js/scripts.js"></script>
   <script>
-    $("#mailit").on("submit", function(e) {
-      let form = $(this);
+    $("#mailitbtn").on("click", function(e) {
     e.preventDefault(); //This is to Avoid Page Refresh and Fire the Event "Click"
+    let form = $('#mailit');
     swal({
       title: "Su pregunta será enviada!",
       text: "Espere pronto una respuesta",
@@ -537,8 +537,9 @@
       confirmButtonText: "Entendido",
       confirmButtonClass: 'btn btn-success'
     }).then(function () {
-        $(this).trigger('submit');
-      });
+      return true;
+      // $(form).trigger('submit');
+    });
   });
 </script>
 </body>
