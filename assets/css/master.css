@@ -18,6 +18,16 @@ body {
 .wbreak {
   word-break: break-word;
 }
+.btn-danger {
+  color: #fff !important;
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+.btn-success {
+  color: #fff !important;
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+}
 #mainBar {
   min-height: 250px;
 }

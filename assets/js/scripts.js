@@ -5,7 +5,9 @@ $(document).ready(function() {
         title: "Su pregunta será enviada!",
         text: "Espere pronto una respuesta",
         type: "success",
-        showCancelButton: false,
+        showCancelButton: true,
+        cancelButtonText: "Cancelar",
+        cancelButtonClass: 'btn btn-danger',
         confirmButtonText: "Entendido",
         confirmButtonClass: 'btn btn-success'
         }).then(function () {
@@ -18,7 +20,9 @@ $(document).ready(function() {
         title: "Su pregunta será enviada!",
         text: "Espere pronto una respuesta",
         type: "success",
-        showCancelButton: false,
+        showCancelButton: true,
+        cancelButtonText: "Cancelar",
+        cancelButtonClass: 'btn btn-danger',
         confirmButtonText: "Entendido",
         confirmButtonClass: 'btn btn-success'
         }).then(function () {
@@ -31,7 +35,9 @@ $(document).ready(function() {
         title: "Su pregunta será enviada!",
         text: "Espere pronto una respuesta",
         type: "success",
-        showCancelButton: false,
+        showCancelButton: true,
+        cancelButtonText: "Cancelar",
+        cancelButtonClass: 'btn btn-danger',
         confirmButtonText: "Entendido",
         confirmButtonClass: 'btn btn-success'
         }).then(function () {
@@ -44,7 +50,9 @@ $(document).ready(function() {
         title: "Su pregunta será enviada!",
         text: "Espere pronto una respuesta",
         type: "success",
-        showCancelButton: false,
+        showCancelButton: true,
+        cancelButtonText: "Cancelar",
+        cancelButtonClass: 'btn btn-danger',
         confirmButtonText: "Entendido",
         confirmButtonClass: 'btn btn-success'
         }).then(function () {
@@ -57,7 +65,9 @@ $(document).ready(function() {
         title: "Su pregunta será enviada!",
         text: "Espere pronto una respuesta",
         type: "success",
-        showCancelButton: false,
+        showCancelButton: true,
+        cancelButtonText: "Cancelar",
+        cancelButtonClass: 'btn btn-danger',
         confirmButtonText: "Entendido",
         confirmButtonClass: 'btn btn-success'
         }).then(function () {
@@ -70,7 +80,9 @@ $(document).ready(function() {
         title: "Su pregunta será enviada!",
         text: "Espere pronto una respuesta",
         type: "success",
-        showCancelButton: false,
+        showCancelButton: true,
+        cancelButtonText: "Cancelar",
+        cancelButtonClass: 'btn btn-danger',
         confirmButtonText: "Entendido",
         confirmButtonClass: 'btn btn-success'
         }).then(function () {
@@ -83,7 +95,9 @@ $(document).ready(function() {
         title: "Su pregunta será enviada!",
         text: "Espere pronto una respuesta",
         type: "success",
-        showCancelButton: false,
+        showCancelButton: true,
+        cancelButtonText: "Cancelar",
+        cancelButtonClass: 'btn btn-danger',
         confirmButtonText: "Entendido",
         confirmButtonClass: 'btn btn-success'
         }).then(function () {
@@ -96,7 +110,9 @@ $(document).ready(function() {
         title: "Su pregunta será enviada!",
         text: "Espere pronto una respuesta",
         type: "success",
-        showCancelButton: false,
+        showCancelButton: true,
+        cancelButtonText: "Cancelar",
+        cancelButtonClass: 'btn btn-danger',
         confirmButtonText: "Entendido",
         confirmButtonClass: 'btn btn-success'
         }).then(function () {
@@ -109,7 +125,9 @@ $(document).ready(function() {
         title: "Su pregunta será enviada!",
         text: "Espere pronto una respuesta",
         type: "success",
-        showCancelButton: false,
+        showCancelButton: true,
+        cancelButtonText: "Cancelar",
+        cancelButtonClass: 'btn btn-danger',
         confirmButtonText: "Entendido",
         confirmButtonClass: 'btn btn-success'
         }).then(function () {
@@ -122,7 +140,9 @@ $(document).ready(function() {
         title: "Su pregunta será enviada!",
         text: "Espere pronto una respuesta",
         type: "success",
-        showCancelButton: false,
+        showCancelButton: true,
+        cancelButtonText: "Cancelar",
+        cancelButtonClass: 'btn btn-danger',
         confirmButtonText: "Entendido",
         confirmButtonClass: 'btn btn-success'
         }).then(function () {
