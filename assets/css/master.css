@@ -15,6 +15,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+.wbreak {
+  word-break: break-word;
+}
 #mainBar {
   min-height: 250px;
 }
@@ -23,10 +26,11 @@ body {
 }
 .mainBanner {
   flex-direction: column;
+  align-items: center;
 }
 .imageContainer {
   max-width: 550px;
-  margin: 0 10px;
+  margin: 10px 0 10px 0;
 }
 .logIn {
   margin: 0;
@@ -115,4 +119,15 @@ dashboard.css:24
   margin-right: 0;
   padding-left: 0;
   padding-right: 0;
+}
+
+
+
+
+@media screen and (min-width:  1024px) {
+  .mainBanner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
