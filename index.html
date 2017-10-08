@@ -30,17 +30,20 @@
 </head>
 <body>
   <header id="mainBar" class="bg-primary pb-4">
-    <div class="container-fluid sticky-top">
+    <div class="container-fluid sticky-top mainMenu">
       <!-- Image and text -->
       <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img src="assets/images/fmvz.jpg" width="40" height="40" class="d-inline-block align-top rounded-circle mr-2" alt="FMVZ logo">
           Pet Gurú
         </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav  ml-auto mr-2">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio</a> 
             </li>
             <li class="nav-item">
               <a class="nav-link" href="foro.html">Foro</a>
@@ -55,7 +58,7 @@
         </div>
       </nav>
     </div>
-    <div class="container-fluid d-flex flex-row justify-content-around align-items-center">
+    <div class=" mainBanner container-fluid d-flex">
       <div class="imageContainer mt-4">
         <img id="bannerImg" class="img-fluid" src="assets/images/banner.jpg" alt="Main image">
       </div>

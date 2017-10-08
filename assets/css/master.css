@@ -18,8 +18,15 @@ body {
 #mainBar {
   min-height: 250px;
 }
+.mainMenu {
+  padding: 0;
+}
+.mainBanner {
+  flex-direction: column;
+}
 .imageContainer {
   max-width: 550px;
+  margin: 0 10px;
 }
 .logIn {
   margin: 0;
