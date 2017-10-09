@@ -1,13 +1,14 @@
-$primarydark: #016B8E;
-$primarycolor: #52BCDE;
-$primarylight: #D6F4FF;
-$text: #DE9952;
-$accent: #FFEB3B;
+$primarydark: #064789;
+$primarycolor: #1059A3;
+$primarylight: #F7FAFD;
+$text: #000;
+$accent: #A5BE00;
 $primarytext: #212121;
-$secondary-text-color: #D9E0E2;
+$secondarycolor: #D9E0E2;
 $divider-color: #BDBDBD;
 $danger:#dc3545 !important;
 $success:#28a745 !important;
+$white: #FFFFFF;
 
 
 body {
@@ -15,17 +16,27 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: $text;
+}
+a.link {
+  color: #fefefe;
+  font-weight: 300;
+  transition: all .3s ease;
+}
+a.link:hover {
+  text-decoration: none;
+  color: #a0a0a0;
 }
 .wbreak {
   word-break: break-word;
 }
 .btn-danger {
-  color: #fff;
+  color: $white;
   background-color: $danger;
   border-color: $danger;
 }
 .btn-success {
-  color: #fff;
+  color: $white;
   background-color: $success;
   border-color: $success;
 }
@@ -35,6 +46,21 @@ body {
     font-size: 20px;
     line-height: 30px;
   }
+}
+.btn {
+  cursor: pointer;
+}
+.btn-outline-light:hover {
+  color: #353535;
+}
+// Color styles
+.unam-dark {
+  background-color: $primarydark;
+  color: $white;
+}
+.unam-primary {
+  background-color: $primarycolor;
+  color: $white;
 }
 #mainBar {
   min-height: 250px;
@@ -55,9 +81,11 @@ body {
   padding: 0;
   width: 100%;
   margin-bottom: 2rem;
+  color: $primarytext;
 }
 .infoText {
   margin-bottom: 0;
+  background-color: $primarylight;
 }
 .animals {
   display: flex;
@@ -72,59 +100,29 @@ body {
   height: auto;
   margin: 10px;
 }
-
-main {
-  flex: 1;
-}
-
-.bg-primary {
-  background: #1c3d6c !important;
-}
-
-.btn {
-  cursor: pointer;
-}
-
-.btn-outline-light:hover {
-  color: #353535;
-}
-
 .footer {
   font-size: 1.2rem;
-  background: #252525 !important;
+  background-color: $primarydark;
   min-height: 5rem;
   align-items: center;
   display: flex;
   padding: .2rem 2rem;
 }
-
 .text-muted {
-  color: #ebebeb !important;
-  font-weight: 300;
-  opacity: .8;
+  a {
+    color: $white !important;
+    font-weight: 300;
+    opacity: .8;
+  }
+  a:hover {
+    color: $secondarycolor !important;
+    border-bottom: 1px dotted $divider-color;
+  }
 }
-
-a.link {
-  color: #fefefe;
-  font-weight: 300;
-  transition: all .3s ease;
-}
-
-a.link:hover {
-  text-decoration: none;
-  color: #a0a0a0;
-}
-
-
-
 /*Side bar*/
 .sidebar {
   padding-left: 0;
   padding-right: 0;
-}
-.sidebar {
-  position: fixed;
-  top: 51px;
   bottom: 0;
   left: 0;
   z-index: 1000;

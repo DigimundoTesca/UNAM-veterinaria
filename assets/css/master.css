@@ -2,18 +2,28 @@ body {
   font-size: 18px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  color: #000; }
+
+a.link {
+  color: #fefefe;
+  font-weight: 300;
+  transition: all .3s ease; }
+
+a.link:hover {
+  text-decoration: none;
+  color: #a0a0a0; }
 
 .wbreak {
   word-break: break-word; }
 
 .btn-danger {
-  color: #fff;
+  color: #FFFFFF;
   background-color: #dc3545 !important;
   border-color: #dc3545 !important; }
 
 .btn-success {
-  color: #fff;
+  color: #FFFFFF;
   background-color: #28a745 !important;
   border-color: #28a745 !important; }
 
@@ -21,6 +31,20 @@ body {
   min-width: 200px;
   font-size: 20px;
   line-height: 30px; }
+
+.btn {
+  cursor: pointer; }
+
+.btn-outline-light:hover {
+  color: #353535; }
+
+.unam-dark {
+  background-color: #064789;
+  color: #FFFFFF; }
+
+.unam-primary {
+  background-color: #1059A3;
+  color: #FFFFFF; }
 
 #mainBar {
   min-height: 250px; }
@@ -40,10 +64,12 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  color: #212121; }
 
 .infoText {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  background-color: #F7FAFD; }
 
 .animals {
   display: flex;
@@ -58,48 +84,26 @@ body {
   height: auto;
   margin: 10px; }
 
-main {
-  flex: 1; }
-
-.bg-primary {
-  background: #1c3d6c !important; }
-
-.btn {
-  cursor: pointer; }
-
-.btn-outline-light:hover {
-  color: #353535; }
-
 .footer {
   font-size: 1.2rem;
-  background: #252525 !important;
+  background-color: #064789;
   min-height: 5rem;
   align-items: center;
   display: flex;
   padding: .2rem 2rem; }
 
-.text-muted {
-  color: #ebebeb !important;
+.text-muted a {
+  color: #FFFFFF !important;
   font-weight: 300;
   opacity: .8; }
-
-a.link {
-  color: #fefefe;
-  font-weight: 300;
-  transition: all .3s ease; }
-
-a.link:hover {
-  text-decoration: none;
-  color: #a0a0a0; }
+.text-muted a:hover {
+  color: #D9E0E2 !important;
+  border-bottom: 1px dotted #BDBDBD; }
 
 /*Side bar*/
 .sidebar {
   padding-left: 0;
-  padding-right: 0; }
-
-.sidebar {
-  position: fixed;
-  top: 51px;
+  padding-right: 0;
   bottom: 0;
   left: 0;
   z-index: 1000;
