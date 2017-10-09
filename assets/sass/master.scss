@@ -1,6 +1,7 @@
 $primarydark: #064789;
 $primarycolor: #1059A3;
 $primarylight: #F7FAFD;
+$backcolor: #87BFFF;
 $text: #000;
 $accent: #A5BE00;
 $primarytext: #212121;
@@ -17,6 +18,13 @@ body {
   flex-direction: column;
   min-height: 100vh;
   color: $text;
+  background-color: $backcolor;
+}
+.pageContainer {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $white;
 }
 a.link {
   color: #fefefe;
@@ -63,24 +71,20 @@ a.link:hover {
   color: $white;
 }
 #mainBar {
-  min-height: 250px;
+  min-height: 450px;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center center;
+  justify-content: flex-end;
+  align-items: center;
 }
 .mainMenu {
   padding: 0;
-}
-.mainBanner {
-  flex-direction: column;
-  align-items: center;
-}
-.imageContainer {
-  max-width: 550px;
-  margin: 10px 0 10px 0;
 }
 .logIn {
   margin: 0;
   padding: 0;
   width: 100%;
-  margin-bottom: 2rem;
   color: $primarytext;
 }
 .infoText {
@@ -161,9 +165,7 @@ a.link:hover {
     font-weight: 300;
     line-height: 1.1;
   }
-  .mainBanner {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  .logIn {
+    margin-right: 50px;
   }
 }
