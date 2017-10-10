@@ -21,7 +21,7 @@ body {
   background-color: $backcolor;
 }
 .pageContainer {
-  max-width: 1500px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   background-color: $white;
@@ -86,6 +86,13 @@ a.link:hover {
   padding: 0;
   width: 100%;
   color: $primarytext;
+}
+.welcome-buttons {
+  flex-direction: column;
+  .newQuestion {
+    margin: 10px auto;
+    max-width: 200px;
+  }
 }
 .infoText {
   margin-bottom: 0;
@@ -167,6 +174,12 @@ a.link:hover {
 @media screen and (min-width:  768px) {
   .card {
     margin: 15px 0;
+  }
+  .welcome-buttons {
+    flex-direction: row;
+    .newQuestion {
+      margin: 0;
+    }
   }
 
 }
