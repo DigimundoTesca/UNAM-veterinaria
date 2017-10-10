@@ -7,7 +7,7 @@ body {
   background-color: #87BFFF; }
 
 .pageContainer {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   background-color: #FFFFFF; }
@@ -70,6 +70,12 @@ a.link:hover {
   width: 100%;
   color: #212121; }
 
+.welcome-buttons {
+  flex-direction: column; }
+  .welcome-buttons .newQuestion {
+    margin: 10px auto;
+    max-width: 200px; }
+
 .infoText {
   margin-bottom: 0;
   background-color: #F7FAFD; }
@@ -78,14 +84,37 @@ a.link:hover {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  .animals a {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 1px solid #A5BE00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: all 0.3s ease-in-out; }
+  .animals a:hover {
+    cursor: pointer;
+    border: 2px solid #1059A3;
+    background-color: #A5BE00; }
+  .animals img {
+    width: 100px;
+    height: auto; }
 
-.animals a:hover {
-  cursor: pointer; }
+.card-banner {
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-.animals img {
-  width: 90%;
-  height: auto;
-  margin: 10px; }
+.foroContainer {
+  margin: 0; }
+
+.card-container .card {
+  width: 100%;
+  max-width: 800px; }
 
 .footer {
   font-size: 1.2rem;
@@ -103,33 +132,17 @@ a.link:hover {
   color: #D9E0E2 !important;
   border-bottom: 1px dotted #BDBDBD; }
 
-/*Side bar*/
-.sidebar {
-  padding-left: 0;
-  padding-right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  padding: 20px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  border-right: 1px solid #eee; }
-
-.foroContainer {
-  margin: 0; }
-
-#foroMain {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0; }
-
 @media screen and (min-width: 550px) {
   .logIn {
     max-width: 20rem; } }
 @media screen and (min-width: 768px) {
   .card {
-    margin: 15px 0; } }
+    margin: 15px 0; }
+
+  .welcome-buttons {
+    flex-direction: row; }
+    .welcome-buttons .newQuestion {
+      margin: 0; } }
 @media screen and (min-width: 1024px) {
   .h1 {
     font-size: 4.5rem;

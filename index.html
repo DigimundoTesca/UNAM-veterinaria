@@ -63,36 +63,40 @@
     </header>
     <div class="container-fuid">
       <div class="row foroContainer">
-        <div class="col-sm-3 col-md-2 d-sm-block bg-light sidebar">
-          <p class="h4 text-center text-uppercase pt-5 pb-2">Realiza una pregunta</p>
-          <p class="h5 text-center pb-4">Elige un espécimen</p>
-          <div class="animals m-auto d-flex flex-row flex-wrap">
-            <a data-toggle="modal" data-dismiss="modal" data-target="#vacaModal"><img src="assets/images/animal/vaca.png" alt="animal icon"></a>
-            <a data-toggle="modal" data-dismiss="modal" data-target="#cerdoModal"><img src="assets/images/animal/cerdo.png" alt="animal icon"></a>
-            <a data-toggle="modal" data-dismiss="modal" data-target="#caballoModal"><img src="assets/images/animal/caballo.png" alt="animal icon"></a>
-            <a data-toggle="modal" data-dismiss="modal" data-target="#ovejaModal"><img src="assets/images/animal/oveja.png" alt="animal icon"></a>
-            <a data-toggle="modal" data-dismiss="modal" data-target="#galloModal"><img src="assets/images/animal/gallo.png" alt="animal icon"></a>
-            <a data-toggle="modal" data-dismiss="modal" data-target="#conejoModal"><img src="assets/images/animal/conejo.png" alt="animal icon"></a>
-            <a data-toggle="modal" data-dismiss="modal" data-target="#avesModal"><img src="assets/images/animal/pato.png" alt="animal icon"></a>
-            <a data-toggle="modal" data-dismiss="modal" data-target="#perroModal"><img src="assets/images/animal/perro.png" alt="animal icon"></a>
-            <a data-toggle="modal" data-dismiss="modal" data-target="#gatoModal"><img src="assets/images/animal/gato.png" alt="animal icon"></a>
-            <a data-toggle="modal" data-dismiss="modal" data-target="#silvestreModal"><img src="assets/images/animal/oveja.jpg" alt="animal icon"></a>
-          </div>
-        </div>
-        <main id="foroMain" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+        <main id="foroMain" class="col-12 pt-3">
           <div class="jumbotron">
             <div class="container-fluid">
               <h1 class="h1">¡Bienvenido al foro de Pet Gurú!</h1>
               <p class="lead pt-4 pb-2">Busca primero la información que necesitas. <br>Si no esta, crea tu pregunta. </p>
               <hr class="my-4">
-              <div class="container-fluid d-flex justify-content-end">
-                <form class="form-inline pb-5">
+              <div class="container-fluid d-flex justify-content-around welcome-buttons">
+                <form class="form-inline">
                   <div class="form-group mx-sm-3">
                     <label for="search" class="pr-3">Buscar: </label>
                     <input type="text" class="form-control" id="search" placeholder="Vaca">
                   </div>
                   <button type="submit" class="btn btn-primary">Buscar</button>
                 </form>
+                <a class="btn btn-primary newQuestion" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Realiza una pregunta
+                </a>
+              </div>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  <h5 class="text-center">Elige un espécimen</h5>
+                  <div class="animals m-auto d-flex flex-row flex-wrap">
+                    <a data-toggle="modal" data-target="#vacaModal"><img src="assets/images/animal/vaca.png" alt="animal icon"></a>
+                    <a data-toggle="modal" data-dismiss="modal" data-target="#cerdoModal"><img src="assets/images/animal/cerdo.png" alt="animal icon"></a>
+                    <a data-toggle="modal" data-dismiss="modal" data-target="#caballoModal"><img src="assets/images/animal/caballo.png" alt="animal icon"></a>
+                    <a data-toggle="modal" data-dismiss="modal" data-target="#ovejaModal"><img src="assets/images/animal/oveja.png" alt="animal icon"></a>
+                    <a data-toggle="modal" data-dismiss="modal" data-target="#galloModal"><img src="assets/images/animal/gallo.png" alt="animal icon"></a>
+                    <a data-toggle="modal" data-dismiss="modal" data-target="#conejoModal"><img src="assets/images/animal/conejo.png" alt="animal icon"></a>
+                    <a data-toggle="modal" data-dismiss="modal" data-target="#avesModal"><img src="assets/images/animal/pato.png" alt="animal icon"></a>
+                    <a data-toggle="modal" data-dismiss="modal" data-target="#perroModal"><img src="assets/images/animal/perro.png" alt="animal icon"></a>
+                    <a data-toggle="modal" data-dismiss="modal" data-target="#gatoModal"><img src="assets/images/animal/gato.png" alt="animal icon"></a>
+                    <a data-toggle="modal" data-dismiss="modal" data-target="#silvestreModal"><img src="assets/images/animal/oveja.jpg" alt="animal icon"></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -105,52 +109,34 @@
               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae earum molestiae quae, ratione est ducimus.</p>
               <hr class="my-4">
               <div class="card-container d-flex flex-row flex-wrap justify-content-around align-items-center">
-                <div class="card" style="width: 20rem;">
+                <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
+                    <h4 class="card-title card-banner">
+                      <img src="assets/images/banner.jpg" class="img-fluid" alt="Question image">
+                    </h4>
+                    <h5 class="card-subtitle mb-2 mt-4 text-dark">Pregunta corta</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis odio illo dolores fugiat ipsa odit explicabo impedit, eaque temporibus minima.</p>
-                    <a href="#" class="card-link">Leer más</a>
+                    <a href="single-question.html" class="card-link">Leer más</a>
                   </div>
                 </div>
-                <div class="card" style="width: 20rem;">
+                <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eaque accusamus voluptatem porro deserunt maxime illum, nulla nesciunt eum optio?</p>
-                    <a href="#" class="card-link">Leer más</a>
+                    <h4 class="card-title card-banner">
+                      <img src="assets/images/banner.jpg" class="img-fluid" alt="Question image">
+                    </h4>
+                    <h5 class="card-subtitle mb-2 mt-4 text-dark">Pregunta corta</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis odio illo dolores fugiat ipsa odit explicabo impedit, eaque temporibus minima.</p>
+                    <a href="single-question.html" class="card-link">Leer más</a>
                   </div>
                 </div>
-                <div class="card" style="width: 20rem;">
+                <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere eveniet assumenda repellat dolores harum deserunt, eius quis hic iusto.</p>
-                    <a href="#" class="card-link">Leer más</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed veritatis aspernatur, ea libero. Est cum, voluptatem in, eum qui recusandae!</p>
-                    <a href="#" class="card-link">Leer más</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolore labore at sint deserunt veritatis. Officiis deserunt rerum culpa omnis!</p>
-                    <a href="#" class="card-link">Leer más</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla est architecto veniam harum commodi sint eveniet ducimus reiciendis, aut accusamus?</p>
-                    <a href="#" class="card-link">Leer más</a>
+                    <h4 class="card-title card-banner">
+                      <img src="assets/images/banner.jpg" class="img-fluid" alt="Question image">
+                    </h4>
+                    <h5 class="card-subtitle mb-2 mt-4 text-dark">Pregunta corta</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis odio illo dolores fugiat ipsa odit explicabo impedit, eaque temporibus minima.</p>
+                    <a href="single-question.html" class="card-link">Leer más</a>
                   </div>
                 </div>
               </div>
@@ -160,52 +146,34 @@
               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae earum molestiae quae, ratione est ducimus.</p>
               <hr class="my-4">
               <div class="card-container d-flex flex-row flex-wrap justify-content-around align-items-center">
-                <div class="card" style="width: 20rem;">
+                <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
+                    <h4 class="card-title card-banner">
+                      <img src="assets/images/banner.jpg" class="img-fluid" alt="Question image">
+                    </h4>
+                    <h5 class="card-subtitle mb-2 mt-4 text-dark">Pregunta corta</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis odio illo dolores fugiat ipsa odit explicabo impedit, eaque temporibus minima.</p>
-                    <a href="#" class="card-link">Leer más</a>
+                    <a href="single-question.html" class="card-link">Leer más</a>
                   </div>
                 </div>
-                <div class="card" style="width: 20rem;">
+                <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eaque accusamus voluptatem porro deserunt maxime illum, nulla nesciunt eum optio?</p>
-                    <a href="#" class="card-link">Leer más</a>
+                    <h4 class="card-title card-banner">
+                      <img src="assets/images/banner.jpg" class="img-fluid" alt="Question image">
+                    </h4>
+                    <h5 class="card-subtitle mb-2 mt-4 text-dark">Pregunta corta</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis odio illo dolores fugiat ipsa odit explicabo impedit, eaque temporibus minima.</p>
+                    <a href="single-question.html" class="card-link">Leer más</a>
                   </div>
                 </div>
-                <div class="card" style="width: 20rem;">
+                <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere eveniet assumenda repellat dolores harum deserunt, eius quis hic iusto.</p>
-                    <a href="#" class="card-link">Leer más</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed veritatis aspernatur, ea libero. Est cum, voluptatem in, eum qui recusandae!</p>
-                    <a href="#" class="card-link">Leer más</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolore labore at sint deserunt veritatis. Officiis deserunt rerum culpa omnis!</p>
-                    <a href="#" class="card-link">Leer más</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla est architecto veniam harum commodi sint eveniet ducimus reiciendis, aut accusamus?</p>
-                    <a href="#" class="card-link">Leer más</a>
+                    <h4 class="card-title card-banner">
+                      <img src="assets/images/banner.jpg" class="img-fluid" alt="Question image">
+                    </h4>
+                    <h5 class="card-subtitle mb-2 mt-4 text-dark">Pregunta corta</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis odio illo dolores fugiat ipsa odit explicabo impedit, eaque temporibus minima.</p>
+                    <a href="single-question.html" class="card-link">Leer más</a>
                   </div>
                 </div>
               </div>
@@ -215,52 +183,34 @@
               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae earum molestiae quae, ratione est ducimus.</p>
               <hr class="my-4">
               <div class="card-container d-flex flex-row flex-wrap justify-content-around align-items-center">
-                <div class="card" style="width: 20rem;">
+                <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
+                    <h4 class="card-title card-banner">
+                      <img src="assets/images/banner.jpg" class="img-fluid" alt="Question image">
+                    </h4>
+                    <h5 class="card-subtitle mb-2 mt-4 text-dark">Pregunta corta</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis odio illo dolores fugiat ipsa odit explicabo impedit, eaque temporibus minima.</p>
-                    <a href="#" class="card-link">Leer más</a>
+                    <a href="single-question.html" class="card-link">Leer más</a>
                   </div>
                 </div>
-                <div class="card" style="width: 20rem;">
+                <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eaque accusamus voluptatem porro deserunt maxime illum, nulla nesciunt eum optio?</p>
-                    <a href="#" class="card-link">Leer más</a>
+                    <h4 class="card-title card-banner">
+                      <img src="assets/images/banner.jpg" class="img-fluid" alt="Question image">
+                    </h4>
+                    <h5 class="card-subtitle mb-2 mt-4 text-dark">Pregunta corta</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis odio illo dolores fugiat ipsa odit explicabo impedit, eaque temporibus minima.</p>
+                    <a href="single-question.html" class="card-link">Leer más</a>
                   </div>
                 </div>
-                <div class="card" style="width: 20rem;">
+                <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere eveniet assumenda repellat dolores harum deserunt, eius quis hic iusto.</p>
-                    <a href="#" class="card-link">Leer más</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed veritatis aspernatur, ea libero. Est cum, voluptatem in, eum qui recusandae!</p>
-                    <a href="#" class="card-link">Leer más</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolore labore at sint deserunt veritatis. Officiis deserunt rerum culpa omnis!</p>
-                    <a href="#" class="card-link">Leer más</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla est architecto veniam harum commodi sint eveniet ducimus reiciendis, aut accusamus?</p>
-                    <a href="#" class="card-link">Leer más</a>
+                    <h4 class="card-title card-banner">
+                      <img src="assets/images/banner.jpg" class="img-fluid" alt="Question image">
+                    </h4>
+                    <h5 class="card-subtitle mb-2 mt-4 text-dark">Pregunta corta</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis odio illo dolores fugiat ipsa odit explicabo impedit, eaque temporibus minima.</p>
+                    <a href="single-question.html" class="card-link">Leer más</a>
                   </div>
                 </div>
               </div>
@@ -270,52 +220,34 @@
               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae earum molestiae quae, ratione est ducimus.</p>
               <hr class="my-4">
               <div class="card-container d-flex flex-row flex-wrap justify-content-around align-items-center">
-                <div class="card" style="width: 20rem;">
+                <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
+                    <h4 class="card-title card-banner">
+                      <img src="assets/images/banner.jpg" class="img-fluid" alt="Question image">
+                    </h4>
+                    <h5 class="card-subtitle mb-2 mt-4 text-dark">Pregunta corta</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis odio illo dolores fugiat ipsa odit explicabo impedit, eaque temporibus minima.</p>
-                    <a href="#" class="card-link">Leer más</a>
+                    <a href="single-question.html" class="card-link">Leer más</a>
                   </div>
                 </div>
-                <div class="card" style="width: 20rem;">
+                <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eaque accusamus voluptatem porro deserunt maxime illum, nulla nesciunt eum optio?</p>
-                    <a href="#" class="card-link">Leer más</a>
+                    <h4 class="card-title card-banner">
+                      <img src="assets/images/banner.jpg" class="img-fluid" alt="Question image">
+                    </h4>
+                    <h5 class="card-subtitle mb-2 mt-4 text-dark">Pregunta corta</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis odio illo dolores fugiat ipsa odit explicabo impedit, eaque temporibus minima.</p>
+                    <a href="single-question.html" class="card-link">Leer más</a>
                   </div>
                 </div>
-                <div class="card" style="width: 20rem;">
+                <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere eveniet assumenda repellat dolores harum deserunt, eius quis hic iusto.</p>
-                    <a href="#" class="card-link">Leer más</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed veritatis aspernatur, ea libero. Est cum, voluptatem in, eum qui recusandae!</p>
-                    <a href="#" class="card-link">Leer más</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolore labore at sint deserunt veritatis. Officiis deserunt rerum culpa omnis!</p>
-                    <a href="#" class="card-link">Leer más</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                  <div class="card-body">
-                    <h4 class="card-title">Paciente #</h4>
-                    <h6 class="card-subtitle mb-2 text-dark">Pregunta corta</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla est architecto veniam harum commodi sint eveniet ducimus reiciendis, aut accusamus?</p>
-                    <a href="#" class="card-link">Leer más</a>
+                    <h4 class="card-title card-banner">
+                      <img src="assets/images/banner.jpg" class="img-fluid" alt="Question image">
+                    </h4>
+                    <h5 class="card-subtitle mb-2 mt-4 text-dark">Pregunta corta</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis odio illo dolores fugiat ipsa odit explicabo impedit, eaque temporibus minima.</p>
+                    <a href="single-question.html" class="card-link">Leer más</a>
                   </div>
                 </div>
               </div>
