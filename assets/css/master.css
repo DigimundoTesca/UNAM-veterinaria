@@ -116,6 +116,9 @@ a.link:hover {
   width: 100%;
   max-width: 800px; }
 
+#cuestionContainer {
+  min-height: 100vh; }
+
 #gallery {
   margin: 0 auto; }
 
