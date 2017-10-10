@@ -116,6 +116,12 @@ a.link:hover {
   width: 100%;
   max-width: 800px; }
 
+#gallery {
+  margin: 0 auto; }
+
+.ug-textpanel-textwrapper {
+  display: none !important; }
+
 .footer {
   font-size: 1.2rem;
   background-color: #064789;

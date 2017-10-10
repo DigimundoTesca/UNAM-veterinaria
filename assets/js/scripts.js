@@ -150,9 +150,6 @@ $(document).ready(function() {
         });
     });
     // Sinlge Question gallery
-    $(function(){
-        $('#galleryContainer').load('gallery.html');
-    });
     jQuery(document).ready(function(){ 
         jQuery("#gallery").unitegallery(); 
     }); 
