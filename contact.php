@@ -64,5 +64,5 @@
   mail($to, $subject, $message, $header);
 
 // Redirect
-  header('Location: foro.html');
+  header('Location: index.html');
 ?>
