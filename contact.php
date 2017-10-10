@@ -30,7 +30,7 @@
   $patient_quickQ = $_POST['pregunta'];
   $patient_question = $_POST['pregLarga'];
   $patient_capilar = $_POST['Capilar'];
-  $patient_mucosa = $_POST['Mucosa'];
+  $patient_mucosa = $_POST['Mucosas'];
   $patient_nodo = $_POST['Linfonodo'];
 
 // Subject
@@ -46,7 +46,7 @@
   <h2>'.$patient_quickQ.'</h2>
   <p> Mensaje: <br>'. $patient_question .'</p>
   <h4>Datos del animal:</h4>
-  <p>Espécimen: '.$patient_animal.'<br>Edad: ' .$patient_age. '<br>Peso: '.$patient_weight.' <br> Sexo: '.$patient_gender.' <br>Estado fisiológico: '.$patient_physiological. '<br>Motivo de la consulta:' .$patient_consult. ' <br>Frecuencia cardiaca: '. $patient_fc .' <br>Frecuencia respiratoria: '. $patient_fr .' <br>Temperatura: '. $patient_temp . '<br>Tiempo de llenado capilar: ' .$patient_capilar. '<br>Coloración de mucosas: ' .$patient_mucosa. '<br>Linfonodos: ' .$patient_nodo. ' <br>Movimientos ruminales: '. $patient_ruminal .' <br>Historia clínica: '. $patient_clinical .' </p>
+  <p>Espécimen: '.$patient_animal.'<br>Edad: ' .$patient_age. '<br>Peso: '.$patient_weight.' <br> Sexo: '.$patient_gender.' <br>Estado fisiológico: '.$patient_physiological. '<br>Motivo de la consulta:' .$patient_consult. ' <br>Frecuencia cardiaca: '. $patient_fc .' <br>Frecuencia respiratoria: '. $patient_fr .' <br>Temperatura: '. $patient_temp . '<br>Tiempo de llenado capilar: ' .$patient_capilar. '<br>Coloración de mucosas: ' .$patient_mucosa. '<br>Linfonodos: ' .$patient_nodo. ' <br>Movimientos ruminales: '. $patient_ruminal .' <br>Historia clínica: <br><br>'. $patient_clinical .' </p>
   </body>
   </html>
   ';
