@@ -3,7 +3,7 @@ $primarycolor: #1059A3;
 $primarylight: #F7FAFD;
 $backcolor: #87BFFF;
 $text: #000;
-$accent: #A5BE00;
+$accent: #D68658;
 $primarytext: #212121;
 $secondarycolor: #D9E0E2;
 $divider-color: #BDBDBD;
@@ -105,7 +105,7 @@ a.link:hover {
   a {
     width: 150px;
     height: 150px;
-    border-radius: 100px;
+    border-radius: 100%;
     border: 1px solid $accent;
     display: flex;
     justify-content: center;
@@ -115,7 +115,7 @@ a.link:hover {
   }
   a:hover {
     cursor: pointer;
-    border: 2px solid $primarycolor;
+    border: 3px solid $primarycolor;
     background-color: $accent;
   }
   img {
@@ -140,6 +140,22 @@ a.link:hover {
     width: 100%;
     max-width: 800px;
 
+  }
+}
+// Gallery and single cuestion page styles
+#cuestionContainer {
+  min-height: 100vh;
+}
+#gallery {
+  margin: 0 auto;
+}
+.ug-textpanel-textwrapper {
+  display: none !important;
+}
+#cuestion {  
+  .questionSingle {
+    max-width: 900px;
+    margin: 0 auto;
   }
 }
 // Footer styles
