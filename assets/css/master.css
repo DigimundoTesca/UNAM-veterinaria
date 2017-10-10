@@ -87,8 +87,8 @@ a.link:hover {
   .animals a {
     width: 150px;
     height: 150px;
-    border-radius: 100px;
-    border: 1px solid #A5BE00;
+    border-radius: 100%;
+    border: 1px solid #D68658;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,8 +96,8 @@ a.link:hover {
     transition: all 0.3s ease-in-out; }
   .animals a:hover {
     cursor: pointer;
-    border: 2px solid #1059A3;
-    background-color: #A5BE00; }
+    border: 3px solid #1059A3;
+    background-color: #D68658; }
   .animals img {
     width: 100px;
     height: auto; }
@@ -121,6 +121,10 @@ a.link:hover {
 
 .ug-textpanel-textwrapper {
   display: none !important; }
+
+#cuestion .questionSingle {
+  max-width: 900px;
+  margin: 0 auto; }
 
 .footer {
   font-size: 1.2rem;
