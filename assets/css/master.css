@@ -50,7 +50,7 @@ a.link:hover {
   color: #FFFFFF; }
 
 .unam-primary {
-  background-color: #1059A3;
+  background-color: #61B4C2;
   color: #FFFFFF; }
 
 #mainBar {
@@ -78,7 +78,7 @@ a.link:hover {
 
 .infoText {
   margin-bottom: 0;
-  background-color: #F7FAFD; }
+  background-color: #DCDDBE; }
 
 .animals {
   display: flex;
@@ -88,7 +88,7 @@ a.link:hover {
     width: 150px;
     height: 150px;
     border-radius: 100%;
-    border: 1px solid #D68658;
+    border: 1px solid #DC6545;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,8 +96,8 @@ a.link:hover {
     transition: all 0.3s ease-in-out; }
   .animals a:hover {
     cursor: pointer;
-    border: 3px solid #1059A3;
-    background-color: #D68658; }
+    border: 3px solid #61B4C2;
+    background-color: #DC6545; }
   .animals img {
     width: 100px;
     height: auto; }
@@ -142,7 +142,7 @@ a.link:hover {
   font-weight: 300;
   opacity: .8; }
 .text-muted a:hover {
-  color: #D9E0E2 !important;
+  color: #CCD44D !important;
   border-bottom: 1px dotted #BDBDBD; }
 
 @media screen and (min-width: 550px) {
