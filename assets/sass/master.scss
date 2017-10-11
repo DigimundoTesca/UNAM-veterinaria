@@ -1,6 +1,7 @@
 $primarydark: #064789;
 $primarycolor: #016FB9;
 $primarylight: #C1CC99;
+$extralight: #DFF0E8;
 $backcolor: #87BFFF;
 $text: #000;
 $accent: #DC6545;
@@ -97,7 +98,7 @@ a.link:hover {
 }
 .infoText {
   margin-bottom: 0;
-  background-color: $primarylight;
+  background-color: $extralight;
 }
 .animals {
   display: flex;
