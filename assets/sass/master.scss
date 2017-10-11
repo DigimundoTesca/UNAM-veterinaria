@@ -1,6 +1,6 @@
 $primarydark: #064789;
-$primarycolor: #61B4C2;
-$primarylight: #DCDDBE;
+$primarycolor: #016FB9;
+$primarylight: #C1CC99;
 $backcolor: #87BFFF;
 $text: #000;
 $accent: #DC6545;
@@ -106,7 +106,7 @@ a.link:hover {
     width: 150px;
     height: 150px;
     border-radius: 100%;
-    border: 1px solid $accent;
+    border: 1px solid $primarylight;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +116,7 @@ a.link:hover {
   a:hover {
     cursor: pointer;
     border: 3px solid $primarycolor;
-    background-color: $accent;
+    background-color: $primarylight;
   }
   img {
     width: 100px;

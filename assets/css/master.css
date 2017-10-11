@@ -50,7 +50,7 @@ a.link:hover {
   color: #FFFFFF; }
 
 .unam-primary {
-  background-color: #61B4C2;
+  background-color: #016FB9;
   color: #FFFFFF; }
 
 #mainBar {
@@ -78,7 +78,7 @@ a.link:hover {
 
 .infoText {
   margin-bottom: 0;
-  background-color: #DCDDBE; }
+  background-color: #C1CC99; }
 
 .animals {
   display: flex;
@@ -88,7 +88,7 @@ a.link:hover {
     width: 150px;
     height: 150px;
     border-radius: 100%;
-    border: 1px solid #DC6545;
+    border: 1px solid #C1CC99;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,8 +96,8 @@ a.link:hover {
     transition: all 0.3s ease-in-out; }
   .animals a:hover {
     cursor: pointer;
-    border: 3px solid #61B4C2;
-    background-color: #DC6545; }
+    border: 3px solid #016FB9;
+    background-color: #C1CC99; }
   .animals img {
     width: 100px;
     height: auto; }
