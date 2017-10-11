@@ -153,5 +153,11 @@ $(document).ready(function() {
     jQuery(document).ready(function(){ 
         jQuery("#gallery").unitegallery(); 
     }); 
+    // Animal icons popover
+    $(document).ready(function(){
+        if (screen.width>=1100) {
+            $('[data-toggle="popover"]').popover();   
+        }
+    });
 });
 

@@ -4,7 +4,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   color: #000;
-  background-color: #87BFFF; }
+  background-color: #87BFFF;
+  font-smooth: antialised; }
 
 .pageContainer {
   max-width: 1400px;
@@ -50,7 +51,7 @@ a.link:hover {
   color: #FFFFFF; }
 
 .unam-primary {
-  background-color: #1059A3;
+  background-color: #016FB9;
   color: #FFFFFF; }
 
 #mainBar {
@@ -78,7 +79,12 @@ a.link:hover {
 
 .infoText {
   margin-bottom: 0;
-  background-color: #F7FAFD; }
+  background-color: #DFF0E8; }
+
+.speciesMenu {
+  max-width: 1000px;
+  margin: 20px auto !important;
+  margin-bottom: 0 !important; }
 
 .animals {
   display: flex;
@@ -88,7 +94,7 @@ a.link:hover {
     width: 150px;
     height: 150px;
     border-radius: 100%;
-    border: 1px solid #D68658;
+    border: 1px solid #C1CC99;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,8 +102,8 @@ a.link:hover {
     transition: all 0.3s ease-in-out; }
   .animals a:hover {
     cursor: pointer;
-    border: 3px solid #1059A3;
-    background-color: #D68658; }
+    border: 3px solid #016FB9;
+    background-color: #C1CC99; }
   .animals img {
     width: 100px;
     height: auto; }
@@ -142,7 +148,7 @@ a.link:hover {
   font-weight: 300;
   opacity: .8; }
 .text-muted a:hover {
-  color: #D9E0E2 !important;
+  color: #CCD44D !important;
   border-bottom: 1px dotted #BDBDBD; }
 
 @media screen and (min-width: 550px) {
