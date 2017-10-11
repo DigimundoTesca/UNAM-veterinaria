@@ -155,7 +155,9 @@ $(document).ready(function() {
     }); 
     // Animal icons popover
     $(document).ready(function(){
-        $('[data-toggle="popover"]').popover();   
+        if (screen.width>=1100) {
+            $('[data-toggle="popover"]').popover();   
+        }
     });
 });
 
