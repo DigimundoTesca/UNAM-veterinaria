@@ -10,6 +10,7 @@
 
 // Multiple recipients
   $recipients = array(
+    'ceo@digimundo.com.mx',
     'softwaremanager@digimundo.com.mx',
     'itzli2000@msn.com',
   );

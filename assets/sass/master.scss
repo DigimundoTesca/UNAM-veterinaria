@@ -100,6 +100,11 @@ a.link:hover {
   margin-bottom: 0;
   background-color: $extralight;
 }
+.speciesMenu {
+  max-width: 1000px;
+  margin: 20px auto !important;
+  margin-bottom: 0 !important;
+}
 .animals {
   display: flex;
   flex-direction: column;
