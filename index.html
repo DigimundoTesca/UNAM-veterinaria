@@ -377,8 +377,23 @@
           </div>
           <div class="modal-body">
             <form method="post" action="contact.php" class="container" id="needs-validation" name="caballoquest" novalidate>
+              <h3>Realiza tu pregunta</h3>
+              <div class="form-group">
+                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
+                <input type="text" class="form-control" id="pregunta" name="pregunta">
+              </div>
+              <div class="form-group">
+                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
+                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+              </div>
+              <hr>
+              <h4>Reseña</h4>
               <div class="form-group d-none">
                 <input type="text" class="form-control" name="animal" value="Equino">
+              </div>
+              <div class="form-group">
+                <label for="Edad" class="col-form-label">Edad</label>
+                <input type="text" class="form-control" id="Edad" name="Edad" placeholder="2 años">
               </div>
               <div class="form-group">
                 <label for="Peso" class="col-form-label">Peso</label>
@@ -409,39 +424,39 @@
               </div>
               <hr>
               <div class="form-group">
-                <h3>Signos</h3>
+                <h4>Motivo de consulta</h4>
+                <label for="Consulta" class="col-form-label">Escriba el motivo:</label>
+                <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
+              </div>
+              <hr>
+              <div class="form-group">
+                <h4>Exámen físico general</h4>
                 <div class="form-row">
                   <div class="form-group col-md-4">
-                    <label for="FC" class="col-form-label">Frecuencia Cardiaca</label>
+                    <label for="FC" class="col-form-label">Frecuencia Cardiaca (lpm)</label>
                     <input type="text" class="form-control" id="FC" name="FC">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="FR" class="col-form-label">Frecuencia Respiratoria</label>
+                    <label for="FR" class="col-form-label">Frecuencia Respiratoria (rpm)</label>
                     <input type="text" class="form-control" id="FR" name="FR">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="Temp" class="col-form-label">Temperatura</label>
+                    <label for="Temp" class="col-form-label">Temperatura (°C)</label>
                     <input type="text" class="form-control" id="Temp" name="Temp">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="MovRum" class="col-form-label">Movimientos Ruminales</label>
-                  <input type="text" class="form-control" id="MovRum" name="MovRum">
+                  <label for="Capilar" class="col-form-label">Tiempo de llenado capilar:</label>
+                  <input type="text" class="form-control" id="Capilar" name="Capilar" placeholder="">
+                  <label for="Mucosas" class="col-form-label">Coloración de Mucosas:</label>
+                  <input type="text" class="form-control" id="Mucosas" name="Mucosas" placeholder="">
+                  <label for="Linfonodo" class="col-form-label">Linfonodos:</label>
+                  <input type="text" class="form-control" id="Linfonodo" name="Linfonodo" placeholder="">
                 </div>
                 <div class="form-group">
                   <label for="Clinica">Historia Clínica</label>
                   <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
                 </div>
-              </div>
-              <hr>
-              <h3>Realiza tu pregunta</h3>
-              <div class="form-group">
-                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
-                <input type="text" class="form-control" id="pregunta" name="pregunta">
-              </div>
-              <div class="form-group">
-                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
-                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
               </div>
               <div class="buttonSection d-flex flex-wrap justify-content-around">
                 <input type="submit" class="caballomailitbtn btn btn-success" value="Crear Pregunta" />
@@ -464,8 +479,23 @@
           </div>
           <div class="modal-body">
             <form method="post" name="ovejaquest" action="contact.php" class="container" id="needs-validation" novalidate>
+              <h3>Realiza tu pregunta</h3>
+              <div class="form-group">
+                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
+                <input type="text" class="form-control" id="pregunta" name="pregunta">
+              </div>
+              <div class="form-group">
+                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
+                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+              </div>
+              <hr>
+              <h4>Reseña</h4>
               <div class="form-group d-none">
                 <input type="text" class="form-control" name="animal" value="Ovino">
+              </div>
+              <div class="form-group">
+                <label for="Edad" class="col-form-label">Edad</label>
+                <input type="text" class="form-control" id="Edad" name="Edad" placeholder="2 años">
               </div>
               <div class="form-group">
                 <label for="Peso" class="col-form-label">Peso</label>
@@ -496,20 +526,34 @@
               </div>
               <hr>
               <div class="form-group">
-                <h3>Signos</h3>
+                <h4>Motivo de consulta</h4>
+                <label for="Consulta" class="col-form-label">Escriba el motivo:</label>
+                <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
+              </div>
+              <hr>
+              <div class="form-group">
+                <h4>Exámen físico general</h4>
                 <div class="form-row">
                   <div class="form-group col-md-4">
-                    <label for="FC" class="col-form-label">Frecuencia Cardiaca</label>
+                    <label for="FC" class="col-form-label">Frecuencia Cardiaca (lpm)</label>
                     <input type="text" class="form-control" id="FC" name="FC">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="FR" class="col-form-label">Frecuencia Respiratoria</label>
+                    <label for="FR" class="col-form-label">Frecuencia Respiratoria (rpm)</label>
                     <input type="text" class="form-control" id="FR" name="FR">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="Temp" class="col-form-label">Temperatura</label>
+                    <label for="Temp" class="col-form-label">Temperatura (°C)</label>
                     <input type="text" class="form-control" id="Temp" name="Temp">
                   </div>
+                </div>
+                <div class="form-group">
+                  <label for="Capilar" class="col-form-label">Tiempo de llenado capilar:</label>
+                  <input type="text" class="form-control" id="Capilar" name="Capilar" placeholder="">
+                  <label for="Mucosas" class="col-form-label">Coloración de Mucosas:</label>
+                  <input type="text" class="form-control" id="Mucosas" name="Mucosas" placeholder="">
+                  <label for="Linfonodo" class="col-form-label">Linfonodos:</label>
+                  <input type="text" class="form-control" id="Linfonodo" name="Linfonodo" placeholder="">
                 </div>
                 <div class="form-group">
                   <label for="MovRum" class="col-form-label">Movimientos Ruminales</label>
@@ -519,16 +563,6 @@
                   <label for="Clinica">Historia Clínica</label>
                   <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
                 </div>
-              </div>
-              <hr>
-              <h3>Realiza tu pregunta</h3>
-              <div class="form-group">
-                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
-                <input type="text" class="form-control" id="pregunta" name="pregunta">
-              </div>
-              <div class="form-group">
-                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
-                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
               </div>
               <div class="buttonSection d-flex flex-wrap justify-content-around">
                 <input type="submit" class="ovejamailitbtn btn btn-success" value="Crear Pregunta" />
@@ -551,8 +585,23 @@
           </div>
           <div class="modal-body">
             <form method="post" name="cerdoquest" action="contact.php" class="container" id="needs-validation" novalidate>
+              <h3>Realiza tu pregunta</h3>
+              <div class="form-group">
+                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
+                <input type="text" class="form-control" id="pregunta" name="pregunta">
+              </div>
+              <div class="form-group">
+                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
+                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+              </div>
+              <hr>
+              <h4>Reseña</h4>
               <div class="form-group d-none">
                 <input type="text" class="form-control" name="animal" value="Porcino">
+              </div>
+              <div class="form-group">
+                <label for="Edad" class="col-form-label">Edad</label>
+                <input type="text" class="form-control" id="Edad" name="Edad" placeholder="2 años">
               </div>
               <div class="form-group">
                 <label for="Peso" class="col-form-label">Peso</label>
@@ -583,39 +632,39 @@
               </div>
               <hr>
               <div class="form-group">
-                <h3>Signos</h3>
+                <h4>Motivo de consulta</h4>
+                <label for="Consulta" class="col-form-label">Escriba el motivo:</label>
+                <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
+              </div>
+              <hr>
+              <div class="form-group">
+                <h4>Exámen físico general</h4>
                 <div class="form-row">
                   <div class="form-group col-md-4">
-                    <label for="FC" class="col-form-label">Frecuencia Cardiaca</label>
+                    <label for="FC" class="col-form-label">Frecuencia Cardiaca (lpm)</label>
                     <input type="text" class="form-control" id="FC" name="FC">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="FR" class="col-form-label">Frecuencia Respiratoria</label>
+                    <label for="FR" class="col-form-label">Frecuencia Respiratoria (rpm)</label>
                     <input type="text" class="form-control" id="FR" name="FR">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="Temp" class="col-form-label">Temperatura</label>
+                    <label for="Temp" class="col-form-label">Temperatura (°C)</label>
                     <input type="text" class="form-control" id="Temp" name="Temp">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="MovRum" class="col-form-label">Movimientos Ruminales</label>
-                  <input type="text" class="form-control" id="MovRum" name="MovRum">
+                  <label for="Capilar" class="col-form-label">Tiempo de llenado capilar:</label>
+                  <input type="text" class="form-control" id="Capilar" name="Capilar" placeholder="">
+                  <label for="Mucosas" class="col-form-label">Coloración de Mucosas:</label>
+                  <input type="text" class="form-control" id="Mucosas" name="Mucosas" placeholder="">
+                  <label for="Linfonodo" class="col-form-label">Linfonodos:</label>
+                  <input type="text" class="form-control" id="Linfonodo" name="Linfonodo" placeholder="">
                 </div>
                 <div class="form-group">
                   <label for="Clinica">Historia Clínica</label>
                   <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
                 </div>
-              </div>
-              <hr>
-              <h3>Realiza tu pregunta</h3>
-              <div class="form-group">
-                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
-                <input type="text" class="form-control" id="pregunta" name="pregunta">
-              </div>
-              <div class="form-group">
-                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
-                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
               </div>
               <div class="buttonSection d-flex flex-wrap justify-content-around">
                 <input type="submit" class="cerdomailitbtn btn btn-success" value="Crear Pregunta" />
@@ -638,12 +687,27 @@
           </div>
           <div class="modal-body">
             <form method="post" name="conejoquest" action="contact.php" class="container" id="needs-validation" novalidate>
+              <h3>Realiza tu pregunta</h3>
+              <div class="form-group">
+                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
+                <input type="text" class="form-control" id="pregunta" name="pregunta">
+              </div>
+              <div class="form-group">
+                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
+                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+              </div>
+              <hr>
+              <h4>Reseña</h4>
               <div class="form-group d-none">
                 <input type="text" class="form-control" name="animal" value="Lepórido">
               </div>
               <div class="form-group">
+                <label for="Edad" class="col-form-label">Edad</label>
+                <input type="text" class="form-control" id="Edad" name="Edad" placeholder="2 años">
+              </div>
+              <div class="form-group">
                 <label for="Peso" class="col-form-label">Peso</label>
-                <input type="text" class="form-control" id="Peso" name="Peso" placeholder="0 - 800kg">
+                <input type="text" class="form-control" id="Peso" name="Peso" placeholder="5kg">
               </div>
               <fieldset class="form-group">
                 <div class="form-group">
@@ -670,39 +734,38 @@
               </div>
               <hr>
               <div class="form-group">
-                <h3>Signos</h3>
+                <h4>Motivo de consulta</h4>
+                <label for="Consulta" class="col-form-label">Escriba el motivo:</label>
+                <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
+              </div>
+              <div class="form-group">
+                <h4>Exámen físico general</h4>
                 <div class="form-row">
                   <div class="form-group col-md-4">
-                    <label for="FC" class="col-form-label">Frecuencia Cardiaca</label>
+                    <label for="FC" class="col-form-label">Frecuencia Cardiaca (lpm)</label>
                     <input type="text" class="form-control" id="FC" name="FC">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="FR" class="col-form-label">Frecuencia Respiratoria</label>
+                    <label for="FR" class="col-form-label">Frecuencia Respiratoria (rpm)</label>
                     <input type="text" class="form-control" id="FR" name="FR">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="Temp" class="col-form-label">Temperatura</label>
+                    <label for="Temp" class="col-form-label">Temperatura (°C)</label>
                     <input type="text" class="form-control" id="Temp" name="Temp">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="MovRum" class="col-form-label">Movimientos Ruminales</label>
-                  <input type="text" class="form-control" id="MovRum" name="MovRum">
+                  <label for="Capilar" class="col-form-label">Tiempo de llenado capilar:</label>
+                  <input type="text" class="form-control" id="Capilar" name="Capilar" placeholder="">
+                  <label for="Mucosas" class="col-form-label">Coloración de Mucosas:</label>
+                  <input type="text" class="form-control" id="Mucosas" name="Mucosas" placeholder="">
+                  <label for="Linfonodo" class="col-form-label">Linfonodos:</label>
+                  <input type="text" class="form-control" id="Linfonodo" name="Linfonodo" placeholder="">
                 </div>
                 <div class="form-group">
                   <label for="Clinica">Historia Clínica</label>
                   <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
                 </div>
-              </div>
-              <hr>
-              <h3>Realiza tu pregunta</h3>
-              <div class="form-group">
-                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
-                <input type="text" class="form-control" id="pregunta" name="pregunta">
-              </div>
-              <div class="form-group">
-                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
-                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
               </div>
               <div class="buttonSection d-flex flex-wrap justify-content-around">
                 <input type="submit" class="conejomailitbtn btn btn-success" value="Crear Pregunta" />
@@ -725,12 +788,27 @@
           </div>
           <div class="modal-body">
             <form method="post" name="galloquest" action="contact.php" class="container" id="needs-validation" novalidate>
+              <h3>Realiza tu pregunta</h3>
+              <div class="form-group">
+                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
+                <input type="text" class="form-control" id="pregunta" name="pregunta">
+              </div>
+              <div class="form-group">
+                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
+                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+              </div>
+              <hr>
+              <h4>Reseña</h4>
               <div class="form-group d-none">
                 <input type="text" class="form-control" name="animal" value="Gallus">
               </div>
               <div class="form-group">
+                <label for="Edad" class="col-form-label">Edad</label>
+                <input type="text" class="form-control" id="Edad" name="Edad" placeholder="2 años">
+              </div>
+              <div class="form-group">
                 <label for="Peso" class="col-form-label">Peso</label>
-                <input type="text" class="form-control" id="Peso" name="Peso" placeholder="0 - 800kg">
+                <input type="text" class="form-control" id="Peso" name="Peso" placeholder="2kg">
               </div>
               <fieldset class="form-group">
                 <div class="form-group">
@@ -757,39 +835,39 @@
               </div>
               <hr>
               <div class="form-group">
-                <h3>Signos</h3>
+                <h4>Motivo de consulta</h4>
+                <label for="Consulta" class="col-form-label">Escriba el motivo:</label>
+                <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
+              </div>
+              <hr>
+              <div class="form-group">
+                <h4>Exámen físico general</h4>
                 <div class="form-row">
                   <div class="form-group col-md-4">
-                    <label for="FC" class="col-form-label">Frecuencia Cardiaca</label>
+                    <label for="FC" class="col-form-label">Frecuencia Cardiaca (lpm)</label>
                     <input type="text" class="form-control" id="FC" name="FC">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="FR" class="col-form-label">Frecuencia Respiratoria</label>
+                    <label for="FR" class="col-form-label">Frecuencia Respiratoria (rpm)</label>
                     <input type="text" class="form-control" id="FR" name="FR">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="Temp" class="col-form-label">Temperatura</label>
+                    <label for="Temp" class="col-form-label">Temperatura (°C)</label>
                     <input type="text" class="form-control" id="Temp" name="Temp">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="MovRum" class="col-form-label">Movimientos Ruminales</label>
-                  <input type="text" class="form-control" id="MovRum" name="MovRum">
+                  <label for="Capilar" class="col-form-label">Tiempo de llenado capilar:</label>
+                  <input type="text" class="form-control" id="Capilar" name="Capilar" placeholder="">
+                  <label for="Mucosas" class="col-form-label">Coloración de Mucosas:</label>
+                  <input type="text" class="form-control" id="Mucosas" name="Mucosas" placeholder="">
+                  <label for="Linfonodo" class="col-form-label">Linfonodos:</label>
+                  <input type="text" class="form-control" id="Linfonodo" name="Linfonodo" placeholder="">
                 </div>
                 <div class="form-group">
                   <label for="Clinica">Historia Clínica</label>
                   <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
                 </div>
-              </div>
-              <hr>
-              <h3>Realiza tu pregunta</h3>
-              <div class="form-group">
-                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
-                <input type="text" class="form-control" id="pregunta" name="pregunta">
-              </div>
-              <div class="form-group">
-                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
-                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
               </div>
               <div class="buttonSection d-flex flex-wrap justify-content-around">
                 <input type="submit" class="gallomailitbtn btn btn-success" value="Crear Pregunta" />
@@ -812,12 +890,27 @@
           </div>
           <div class="modal-body">
             <form method="post" name="avequest" action="contact.php" class="container" id="needs-validation" novalidate>
+              <h3>Realiza tu pregunta</h3>
+              <div class="form-group">
+                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
+                <input type="text" class="form-control" id="pregunta" name="pregunta">
+              </div>
+              <div class="form-group">
+                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
+                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+              </div>
+              <hr>
+              <h4>Reseña</h4>
               <div class="form-group d-none">
                 <input type="text" class="form-control" name="animal" value="Ave">
               </div>
               <div class="form-group">
+                <label for="Edad" class="col-form-label">Edad</label>
+                <input type="text" class="form-control" id="Edad" name="Edad" placeholder="2 años">
+              </div>
+              <div class="form-group">
                 <label for="Peso" class="col-form-label">Peso</label>
-                <input type="text" class="form-control" id="Peso" name="Peso" placeholder="0 - 800kg">
+                <input type="text" class="form-control" id="Peso" name="Peso" placeholder="0.5kg">
               </div>
               <fieldset class="form-group">
                 <div class="form-group">
@@ -844,39 +937,39 @@
               </div>
               <hr>
               <div class="form-group">
-                <h3>Signos</h3>
+                <h4>Motivo de consulta</h4>
+                <label for="Consulta" class="col-form-label">Escriba el motivo:</label>
+                <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
+              </div>
+              <hr>
+              <div class="form-group">
+                <h4>Exámen físico general</h4>
                 <div class="form-row">
                   <div class="form-group col-md-4">
-                    <label for="FC" class="col-form-label">Frecuencia Cardiaca</label>
+                    <label for="FC" class="col-form-label">Frecuencia Cardiaca (lpm)</label>
                     <input type="text" class="form-control" id="FC" name="FC">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="FR" class="col-form-label">Frecuencia Respiratoria</label>
+                    <label for="FR" class="col-form-label">Frecuencia Respiratoria (rpm)</label>
                     <input type="text" class="form-control" id="FR" name="FR">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="Temp" class="col-form-label">Temperatura</label>
+                    <label for="Temp" class="col-form-label">Temperatura (°C)</label>
                     <input type="text" class="form-control" id="Temp" name="Temp">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="MovRum" class="col-form-label">Movimientos Ruminales</label>
-                  <input type="text" class="form-control" id="MovRum" name="MovRum">
+                  <label for="Capilar" class="col-form-label">Tiempo de llenado capilar:</label>
+                  <input type="text" class="form-control" id="Capilar" name="Capilar" placeholder="">
+                  <label for="Mucosas" class="col-form-label">Coloración de Mucosas:</label>
+                  <input type="text" class="form-control" id="Mucosas" name="Mucosas" placeholder="">
+                  <label for="Linfonodo" class="col-form-label">Linfonodos:</label>
+                  <input type="text" class="form-control" id="Linfonodo" name="Linfonodo" placeholder="">
                 </div>
                 <div class="form-group">
                   <label for="Clinica">Historia Clínica</label>
                   <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
                 </div>
-              </div>
-              <hr>
-              <h3>Realiza tu pregunta</h3>
-              <div class="form-group">
-                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
-                <input type="text" class="form-control" id="pregunta" name="pregunta">
-              </div>
-              <div class="form-group">
-                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
-                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
               </div>
               <div class="buttonSection d-flex flex-wrap justify-content-around">
                 <input type="submit" class="avemailitbtn btn btn-success" value="Crear Pregunta" />
@@ -899,12 +992,27 @@
           </div>
           <div class="modal-body">
             <form method="post" name="perroquest" action="contact.php" class="container" id="needs-validation" novalidate>
+              <h3>Realiza tu pregunta</h3>
+              <div class="form-group">
+                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
+                <input type="text" class="form-control" id="pregunta" name="pregunta">
+              </div>
+              <div class="form-group">
+                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
+                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+              </div>
+              <hr>
+              <h4>Reseña</h4>
               <div class="form-group d-none">
                 <input type="text" class="form-control" name="animal" value="Canino">
               </div>
               <div class="form-group">
+                <label for="Edad" class="col-form-label">Edad</label>
+                <input type="text" class="form-control" id="Edad" name="Edad" placeholder="2 años">
+              </div>
+              <div class="form-group">
                 <label for="Peso" class="col-form-label">Peso</label>
-                <input type="text" class="form-control" id="Peso" name="Peso" placeholder="0 - 800kg">
+                <input type="text" class="form-control" id="Peso" name="Peso" placeholder="5 kg">
               </div>
               <fieldset class="form-group">
                 <div class="form-group">
@@ -931,39 +1039,39 @@
               </div>
               <hr>
               <div class="form-group">
-                <h3>Signos</h3>
+                <h4>Motivo de consulta</h4>
+                <label for="Consulta" class="col-form-label">Escriba el motivo:</label>
+                <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
+              </div>
+              <hr>
+              <div class="form-group">
+                <h4>Exámen físico general</h4>
                 <div class="form-row">
                   <div class="form-group col-md-4">
-                    <label for="FC" class="col-form-label">Frecuencia Cardiaca</label>
+                    <label for="FC" class="col-form-label">Frecuencia Cardiaca (lpm)</label>
                     <input type="text" class="form-control" id="FC" name="FC">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="FR" class="col-form-label">Frecuencia Respiratoria</label>
+                    <label for="FR" class="col-form-label">Frecuencia Respiratoria (rpm)</label>
                     <input type="text" class="form-control" id="FR" name="FR">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="Temp" class="col-form-label">Temperatura</label>
+                    <label for="Temp" class="col-form-label">Temperatura (°C)</label>
                     <input type="text" class="form-control" id="Temp" name="Temp">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="MovRum" class="col-form-label">Movimientos Ruminales</label>
-                  <input type="text" class="form-control" id="MovRum" name="MovRum">
+                  <label for="Capilar" class="col-form-label">Tiempo de llenado capilar:</label>
+                  <input type="text" class="form-control" id="Capilar" name="Capilar" placeholder="">
+                  <label for="Mucosas" class="col-form-label">Coloración de Mucosas:</label>
+                  <input type="text" class="form-control" id="Mucosas" name="Mucosas" placeholder="">
+                  <label for="Linfonodo" class="col-form-label">Linfonodos:</label>
+                  <input type="text" class="form-control" id="Linfonodo" name="Linfonodo" placeholder="">
                 </div>
                 <div class="form-group">
                   <label for="Clinica">Historia Clínica</label>
                   <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
                 </div>
-              </div>
-              <hr>
-              <h3>Realiza tu pregunta</h3>
-              <div class="form-group">
-                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
-                <input type="text" class="form-control" id="pregunta" name="pregunta">
-              </div>
-              <div class="form-group">
-                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
-                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
               </div>
               <div class="buttonSection d-flex flex-wrap justify-content-around">
                 <input type="submit" class="perromailitbtn btn btn-success" value="Crear Pregunta" />
@@ -986,12 +1094,27 @@
           </div>
           <div class="modal-body">
             <form method="post" name="gatoquest" action="contact.php" class="container" id="needs-validation" novalidate>
+              <h3>Realiza tu pregunta</h3>
+              <div class="form-group">
+                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
+                <input type="text" class="form-control" id="pregunta" name="pregunta">
+              </div>
+              <div class="form-group">
+                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
+                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+              </div>
+              <hr>
+              <h4>Reseña</h4>
               <div class="form-group d-none">
                 <input type="text" class="form-control" name="animal" value="Felino">
               </div>
               <div class="form-group">
+                <label for="Edad" class="col-form-label">Edad</label>
+                <input type="text" class="form-control" id="Edad" name="Edad" placeholder="2 años">
+              </div>
+              <div class="form-group">
                 <label for="Peso" class="col-form-label">Peso</label>
-                <input type="text" class="form-control" id="Peso" name="Peso" placeholder="0 - 800kg">
+                <input type="text" class="form-control" id="Peso" name="Peso" placeholder="3kg">
               </div>
               <fieldset class="form-group">
                 <div class="form-group">
@@ -1018,39 +1141,39 @@
               </div>
               <hr>
               <div class="form-group">
-                <h3>Signos</h3>
+                <h4>Motivo de consulta</h4>
+                <label for="Consulta" class="col-form-label">Escriba el motivo:</label>
+                <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
+              </div>
+              <hr>
+              <div class="form-group">
+                <h4>Exámen físico general</h4>
                 <div class="form-row">
                   <div class="form-group col-md-4">
-                    <label for="FC" class="col-form-label">Frecuencia Cardiaca</label>
+                    <label for="FC" class="col-form-label">Frecuencia Cardiaca (lpm)</label>
                     <input type="text" class="form-control" id="FC" name="FC">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="FR" class="col-form-label">Frecuencia Respiratoria</label>
+                    <label for="FR" class="col-form-label">Frecuencia Respiratoria (rpm)</label>
                     <input type="text" class="form-control" id="FR" name="FR">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="Temp" class="col-form-label">Temperatura</label>
+                    <label for="Temp" class="col-form-label">Temperatura (°C)</label>
                     <input type="text" class="form-control" id="Temp" name="Temp">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="MovRum" class="col-form-label">Movimientos Ruminales</label>
-                  <input type="text" class="form-control" id="MovRum" name="MovRum">
+                  <label for="Capilar" class="col-form-label">Tiempo de llenado capilar:</label>
+                  <input type="text" class="form-control" id="Capilar" name="Capilar" placeholder="">
+                  <label for="Mucosas" class="col-form-label">Coloración de Mucosas:</label>
+                  <input type="text" class="form-control" id="Mucosas" name="Mucosas" placeholder="">
+                  <label for="Linfonodo" class="col-form-label">Linfonodos:</label>
+                  <input type="text" class="form-control" id="Linfonodo" name="Linfonodo" placeholder="">
                 </div>
                 <div class="form-group">
                   <label for="Clinica">Historia Clínica</label>
                   <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
                 </div>
-              </div>
-              <hr>
-              <h3>Realiza tu pregunta</h3>
-              <div class="form-group">
-                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
-                <input type="text" class="form-control" id="pregunta" name="pregunta">
-              </div>
-              <div class="form-group">
-                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
-                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
               </div>
               <div class="buttonSection d-flex flex-wrap justify-content-around">
                 <input type="submit" class="gatomailitbtn btn btn-success" value="Crear Pregunta" />
@@ -1073,12 +1196,27 @@
           </div>
           <div class="modal-body">
             <form method="post" name="faunaquest" action="contact.php" class="container" id="needs-validation" novalidate>
+              <h3>Realiza tu pregunta</h3>
+              <div class="form-group">
+                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
+                <input type="text" class="form-control" id="pregunta" name="pregunta">
+              </div>
+              <div class="form-group">
+                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
+                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+              </div>
+              <hr>
+              <h4>Reseña</h4>
               <div class="form-group d-none">
                 <input type="text" class="form-control" name="animal" value="Fauna silvestre">
               </div>
               <div class="form-group">
+                <label for="Edad" class="col-form-label">Edad</label>
+                <input type="text" class="form-control" id="Edad" name="Edad" placeholder="2 años">
+              </div>
+              <div class="form-group">
                 <label for="Peso" class="col-form-label">Peso</label>
-                <input type="text" class="form-control" id="Peso" name="Peso" placeholder="0 - 800kg">
+                <input type="text" class="form-control" id="Peso" name="Peso" placeholder="10kg">
               </div>
               <fieldset class="form-group">
                 <div class="form-group">
@@ -1105,39 +1243,39 @@
               </div>
               <hr>
               <div class="form-group">
-                <h3>Signos</h3>
+                <h4>Motivo de consulta</h4>
+                <label for="Consulta" class="col-form-label">Escriba el motivo:</label>
+                <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
+              </div>
+              <hr>
+              <div class="form-group">
+                <h4>Exámen físico general</h4>
                 <div class="form-row">
                   <div class="form-group col-md-4">
-                    <label for="FC" class="col-form-label">Frecuencia Cardiaca</label>
+                    <label for="FC" class="col-form-label">Frecuencia Cardiaca (lpm)</label>
                     <input type="text" class="form-control" id="FC" name="FC">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="FR" class="col-form-label">Frecuencia Respiratoria</label>
+                    <label for="FR" class="col-form-label">Frecuencia Respiratoria (rpm)</label>
                     <input type="text" class="form-control" id="FR" name="FR">
                   </div>
                   <div class="form-group col-md-4">
-                    <label for="Temp" class="col-form-label">Temperatura</label>
+                    <label for="Temp" class="col-form-label">Temperatura (°C)</label>
                     <input type="text" class="form-control" id="Temp" name="Temp">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="MovRum" class="col-form-label">Movimientos Ruminales</label>
-                  <input type="text" class="form-control" id="MovRum" name="MovRum">
+                  <label for="Capilar" class="col-form-label">Tiempo de llenado capilar:</label>
+                  <input type="text" class="form-control" id="Capilar" name="Capilar" placeholder="">
+                  <label for="Mucosas" class="col-form-label">Coloración de Mucosas:</label>
+                  <input type="text" class="form-control" id="Mucosas" name="Mucosas" placeholder="">
+                  <label for="Linfonodo" class="col-form-label">Linfonodos:</label>
+                  <input type="text" class="form-control" id="Linfonodo" name="Linfonodo" placeholder="">
                 </div>
                 <div class="form-group">
                   <label for="Clinica">Historia Clínica</label>
                   <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
                 </div>
-              </div>
-              <hr>
-              <h3>Realiza tu pregunta</h3>
-              <div class="form-group">
-                <label for="pregunta">Pregunta (De forma corta y precisa)</label>
-                <input type="text" class="form-control" id="pregunta" name="pregunta">
-              </div>
-              <div class="form-group">
-                <label for="pregLarga">Anexa más información sobre tu pregunta</label>
-                <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
               </div>
               <div class="buttonSection d-flex flex-wrap justify-content-around">
                 <input type="submit" class="faunamailitbtn btn btn-success" value="Crear Pregunta" />
