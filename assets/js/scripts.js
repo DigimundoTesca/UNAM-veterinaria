@@ -149,5 +149,15 @@ $(document).ready(function() {
           document.faunaquest.submit();
         });
     });
+    // Sinlge Question gallery
+    jQuery(document).ready(function(){ 
+        jQuery("#gallery").unitegallery(); 
+    }); 
+    // Animal icons popover
+    $(document).ready(function(){
+        if (screen.width>=1100) {
+            $('[data-toggle="popover"]').popover();   
+        }
+    });
 });
 
