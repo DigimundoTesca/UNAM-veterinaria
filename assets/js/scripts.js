@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    // Forms handlers
     $(".mailitbtn").on("click", function(e) {
       e.preventDefault();
       swal({
@@ -147,6 +148,19 @@ $(document).ready(function() {
         confirmButtonClass: 'btn btn-success'
         }).then(function () {
           document.faunaquest.submit();
+        });
+    });
+    // Login form handler
+    $( "#LogInOut" ).click(function(e) {
+      e.preventDefault();
+      swal({
+        title: "¡Felicidades!",
+        text: "Bienvenido Juan Perez",
+        type: "success",
+        confirmButtonText: "Vamos",
+        confirmButtonClass: 'btn btn-success'
+        }).then(function () {
+          $(".newQuestion").css("visibility","visible");
         });
     });
     // Sinlge Question gallery

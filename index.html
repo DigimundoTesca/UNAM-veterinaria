@@ -65,26 +65,32 @@
       <div class="row foroContainer">
         <main id="foroMain" class="col-12 pt-3">
           <div class="jumbotron">
-            <div class="container-fluid">
-              <h1 class="h1">¡Bienvenido a Pet Gurú!</h1>
-              <p class="lead pt-4 pb-2">Busca primero la información que necesitas. <br>Si no está, crea tu pregunta. </p>
-              <div class="logIn bcard bg-light">
-                <div class="card-header">Inicia Sesión</div>
-                <div class="card-body">
-                  <form>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Usuario</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Contraseña</label>
-                      <input type="Contraseña" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-                    </div>
-                    <a href="foro.html" class="nav-link unam-primary text-white text-center">Ingresar</a>
-                  </form>
+            <div class="row container-fluid m-auto p-0">
+              <div class="col-sm-12 col-md-8 d-flex  m-auto p-0 align-items-center flex-column justify-content-center">
+                <h1 class="h1">¡Bienvenido a Pet Gurú!</h1>
+                <p class="lead pt-4 pb-2">Busca primero la información que necesitas. <br>Si no está, crea tu pregunta. </p>
+              </div>
+              <div class="col-md-4 d-flex  m-auto p-0 align-items-center flex-column justify-content-center">
+                <div class="logIn bcard bg-light">
+                  <div class="card-header">Inicia Sesión</div>
+                  <div class="card-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Usuario</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Contraseña</label>
+                        <input type="Contraseña" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                      </div>
+                      <a id="LogInOut" href="#" class="nav-link unam-primary text-white text-center">Ingresar</a>
+                    </form>
+                  </div>
                 </div>
               </div>
-              <hr class="my-4">
+            </div>
+            <hr class="my-4">
+            <div class="row d-flex justify-content-center">
               <div class="container-fluid d-flex justify-content-around welcome-buttons">
                 <form class="form-inline">
                   <div class="form-group mx-sm-3">
@@ -93,7 +99,7 @@
                   </div>
                   <button type="submit" class="btn btn-primary">Buscar</button>
                 </form>
-                <a class="btn btn-primary newQuestion" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <a class="btn btn-primary newQuestion notLogged" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                   Realiza una pregunta
                 </a>
               </div>

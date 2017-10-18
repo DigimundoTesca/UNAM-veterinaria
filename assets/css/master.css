@@ -75,7 +75,8 @@ a.link:hover {
   flex-direction: column; }
   .welcome-buttons .newQuestion {
     margin: 10px auto;
-    max-width: 200px; }
+    max-width: 200px;
+    visibility: hidden; }
 
 .infoText {
   margin-bottom: 0;
