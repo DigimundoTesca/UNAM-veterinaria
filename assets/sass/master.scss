@@ -72,6 +72,34 @@ a.link:hover {
   background-color: $primarycolor;
   color: $white;
 }
+.jumbotron {
+  background-color: rgba(233,236,239,0.8);
+}
+// Page styles
+.bck1 {
+  background-image: url(../images/erizo.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.bck2 {
+  background-image: url(../images/fox.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.bck3 {
+  background-image: url(../images/squirrel.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.bck4 {
+  background-image: url(../images/venado.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
 #mainBar {
   min-height: 450px;
   background-image: url(../images/banner.jpg);
@@ -208,6 +236,11 @@ a.link:hover {
 
 }
 @media screen and (min-width:  1024px) {
+  #mainLogo {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
   .h1 {
     font-size: 4.5rem;
     font-weight: 300;
