@@ -131,12 +131,10 @@ a.link:hover {
   width: 100%;
   color: #212121; }
 
-.welcome-buttons {
-  flex-direction: column; }
-  .welcome-buttons .newQuestion {
-    margin: 10px auto;
-    max-width: 200px;
-    visibility: hidden; }
+.newQuestion {
+  margin: 10px auto;
+  max-width: 200px;
+  display: none; }
 
 .infoText {
   margin-bottom: 0;

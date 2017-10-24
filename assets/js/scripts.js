@@ -160,7 +160,8 @@ $(document).ready(function() {
         confirmButtonText: "Vamos",
         confirmButtonClass: 'btn btn-success'
         }).then(function () {
-          $(".newQuestion").css("visibility","visible");
+            $(".logIn").css('display', 'none');
+            $(".newQuestion").css("display","inline");
         });
     });
     // Sinlge Question gallery

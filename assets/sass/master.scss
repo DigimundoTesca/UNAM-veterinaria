@@ -150,13 +150,10 @@ a.link:hover {
   width: 100%;
   color: $primarytext;
 }
-.welcome-buttons {
-  flex-direction: column;
-  .newQuestion {
-    margin: 10px auto;
-    max-width: 200px;
-    visibility: hidden;
-  }
+.newQuestion {
+  margin: 10px auto;
+  max-width: 200px;
+  display: none;
 }
 .infoText {
   margin-bottom: 0;
