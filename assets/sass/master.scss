@@ -100,6 +100,39 @@ a.link:hover {
   background-repeat: repeat;
   background-position: center center;
 }
+.bckBlue {
+  background-color: #189ada;
+  min-height: 300px;
+  color: #FFF;
+}
+.bckLight {
+  background-color: #5eb8e4;
+  min-height: 300px;
+  color: #FFF;
+}
+#mainBanner {
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+}
+#mainLogo {
+  background-color: #FFF;
+  border-radius: 20px 20px 10px 10px;
+  height: 50px;
+  width: auto;
+}
+.bannerText {
+  font-weight: bold;
+  max-width: 600px;
+}
+.infoSquares i {
+  font-size: 35px;
+  margin-top: 10px;
+}
 #mainBar {
   min-height: 450px;
   background-image: url(../images/banner.jpg);
@@ -237,8 +270,8 @@ a.link:hover {
 }
 @media screen and (min-width:  1024px) {
   #mainLogo {
-    width: 60px;
-    height: 60px;
+    width: auto;
+    height: 70px;
     margin-right: 20px;
   }
   .h1 {
