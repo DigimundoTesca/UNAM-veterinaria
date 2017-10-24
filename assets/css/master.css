@@ -22,6 +22,18 @@ a.link:hover {
   text-decoration: none;
   color: #a0a0a0; }
 
+a.unam-primary:hover {
+  background-color: #FFFFFF;
+  color: #016FB9;
+  border: 1px solid #016FB9;
+  transition: all 0.7s ease-in-out; }
+
+a.unam-dark:hover {
+  background-color: #FFFFFF;
+  color: #064789;
+  border: 1px solid #064789;
+  transition: all 0.7s ease-in-out; }
+
 .wbreak {
   word-break: break-word; }
 

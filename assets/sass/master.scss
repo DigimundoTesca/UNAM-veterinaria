@@ -37,6 +37,18 @@ a.link:hover {
   text-decoration: none;
   color: #a0a0a0;
 }
+a.unam-primary:hover {
+  background-color: $white;
+  color: $primarycolor;
+  border: 1px solid $primarycolor;
+  transition: all 0.7s ease-in-out;
+}
+a.unam-dark:hover {
+  background-color: $white;
+  color: $primarydark;
+  border: 1px solid $primarydark;
+  transition: all 0.7s ease-in-out;
+}
 .wbreak {
   word-break: break-word;
 }
