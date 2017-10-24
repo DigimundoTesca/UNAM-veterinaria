@@ -23,15 +23,15 @@ a.link:hover {
   color: #a0a0a0; }
 
 a.unam-primary:hover {
-  background-color: #FFFFFF;
-  color: #016FB9;
-  border: 1px solid #016FB9;
+  background-color: #FFFFFF !important;
+  color: #016FB9 !important;
+  border: 1px solid #016FB9 !important;
   transition: all 0.7s ease-in-out; }
 
 a.unam-dark:hover {
-  background-color: #FFFFFF;
-  color: #064789;
-  border: 1px solid #064789;
+  background-color: #FFFFFF !important;
+  color: #064789 !important;
+  border: 1px solid #064789 !important;
   transition: all 0.7s ease-in-out; }
 
 .wbreak {
