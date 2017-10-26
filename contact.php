@@ -1,5 +1,17 @@
 <?php 
   $encoding = "utf-8";
+// Upload images files
+    $uploaddir = '/var/www/uploads/'; //Or some other temporary location
+    $myFile = $_FILES['images'];
+    $fileCount = count($myFile["name"]);
+    for ($i = 0; $i < $fileCount; $i++) {
+      $uploadfile = $uploaddir . basename($_FILES['images']['name'][$i]);
+      if (!move_uploaded_file($_FILES['images']['tmp_name'][$i], $uploadfile)) {
+        //If there is a potential file attack, stop processing files.
+        break;
+      }
+      $attachments[$i] = $uploadfile;
+    }
 // Preferences for Subject field
   $subject_preferences = array(
     "input-charset" => $encoding,
@@ -61,7 +73,7 @@
   $header .= iconv_mime_encode("Asunto", $patient_quickQ, $subject_preferences);
 
 // Mail it
-  mail($to, $subject, $message, $header);
+  mail($to, $subject, $message, $header, $attachments);
 
 // Redirect
   header('Location: index.html');
