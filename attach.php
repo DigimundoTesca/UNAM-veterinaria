@@ -17,7 +17,7 @@ $recipients = array(
   'frontend@digimundo.com.mx',
   'itzli2000@msn.com',
 );
-  // $to = implode(',', $recipients);
+$to = implode(',', $recipients);
 $from_mailto = $_POST['itzli2000@msn.com'];
 $patient_animal = $_POST['animal'];
 $patient_weight = $_POST['Peso'];
@@ -36,22 +36,21 @@ $subject = 'Se ha creado una nueva pregunta';
 
 // Message
 $message = '
-<html>
-<head>
-<meta charset="utf-8">
-<title>Nueva pregunta.</title>
-</head>
-<body>
-<h2>'.$patient_quickQ.'</h2>
-<p> Mensaje: <br>'. $patient_question .'</p>
-<h4>Datos del animal:</h4>
-<p>Espécimen: '.$patient_animal.'<br>Peso: '.$patient_weight.' <br> Sexo: '.$patient_gender.' <br>Estado fisiológico: '.$patient_physiological.' <br>Frecuencia cardiaca: '. $patient_fc .' <br>Frecuencia respiratoria: '. $patient_fr .' <br>Temperatura: '. $patient_temp .' <br>Movimientos ruminales: '. $patient_ruminal .' <br>Historia clínica: '. $patient_clinical .' </p>
-</body>
-</html>
+'.$patient_quickQ.'
+Mensaje: '. $patient_question .'
+Datos del animal:
+Especimen: '.$patient_animal.'
+Peso: '.$patient_weight.' 
+Sexo: '.$patient_gender.' 
+Estado fisiologico: '.$patient_physiological.' 
+Frecuencia cardiaca: '. $patient_fc .'
+Frecuencia respiratoria: '. $patient_fr .' 
+Temperatura: '. $patient_temp .' 
+Movimientos ruminales: '. $patient_ruminal .' 
+Historia clinica: '. $patient_clinical .'
 ';
 
         //Deal with the email
-$to = 'itzli2000@msn.com';
 $attachment = chunk_split(base64_encode(file_get_contents($_FILES['images']['tmp_name'])));
 $filename = $_FILES['images']['name'];
 
@@ -59,7 +58,7 @@ $boundary =md5(date('r', time()));
 
   // To send HTML mail, the Content-type header must be set
   // Mail header
-$header = "From: Pet Gurú\r\nReply-To: softwaremanager@digimundo.com";
+$header = "From: Pet Guru\r\nReply-To: softwaremanager@digimundo.com";
 $header .= "\r\nMIME-Version: 1.0\r\nContent-Type: multipart/mixed; boundary=\"_1_$boundary\"";
 // $header .= iconv_mime_encode("Asunto", $patient_quickQ, $subject_preferences);
 
