@@ -173,6 +173,7 @@ $(document).ready(function() {
         }).then(function () {
             $(".logIn").css('display', 'none');
             $(".newQuestion").css("display","inline");
+            window.location.href = 'user.html';
         });
     });
     // Sinlge Question gallery
@@ -184,6 +185,19 @@ $(document).ready(function() {
         if (screen.width>=1100) {
             $('[data-toggle="popover"]').popover();   
         }
+    });
+    // Show chat on user page
+    $(document).ready(function() {
+        var footerscroll = document.getElementById('footeruser');
+        var chatmodule = document.getElementById('chatModule');
+        $('#showChat').on('click', function(event) {
+            event.preventDefault();
+            chatmodule.classList.toggle('activeChat');
+        });
+        $('.chatClose').on('click', function(event) {
+            event.preventDefault();
+            chatmodule.classList.toggle('activeChat');
+        });
     });
 
 

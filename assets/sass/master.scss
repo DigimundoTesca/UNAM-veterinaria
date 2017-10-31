@@ -244,6 +244,7 @@ a.unam-dark:hover {
   align-items: center;
   display: flex;
   padding: .2rem 2rem;
+  position: relative;
 }
 .text-muted {
   a {
@@ -261,6 +262,46 @@ a.unam-dark:hover {
   height: 300px !important;
   max-height: 300px !important;
   overflow-y: scroll
+}
+.questContainer {
+  a {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $primarycolor;
+  }
+}
+.showChat {
+  width: 50px;
+  height: 50px;
+  background-color: $primarydark;
+  border: none;
+  border-radius: 100%;
+  font-size: 25px;
+  line-height: 30px;
+  color: $white;
+  position: absolute;
+  bottom: 90px;
+  right: 23px;
+}
+.chatContainer {
+  height: 400px;
+  max-height: 400px;
+  position: absolute;
+  right: -400px;
+  bottom: 10px;
+  margin: 0 !important;
+  width: 330px;
+  transition: all 0.5s ease-in-out;
+}
+.chatContainer.activeChat {
+  right: 10px;
+}
+.chatInfo {
+  height: 220px;
+  overflow: scroll;
 }
 
 
