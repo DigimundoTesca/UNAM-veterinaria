@@ -59,5 +59,5 @@
   mail($to, $subject, $message, $header);
 
 // Redirect
-  header('Location: foro.html');
+  header('Location: user.html');
 ?>

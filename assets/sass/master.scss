@@ -256,6 +256,12 @@ a.unam-dark:hover {
     border-bottom: 1px dotted $divider-color;
   }
 }
+// Users page
+.questContainer {
+  height: 300px !important;
+  max-height: 300px !important;
+  overflow-y: scroll
+}
 
 
 
@@ -290,5 +296,9 @@ a.unam-dark:hover {
   }
   .logIn {
     margin-right: 50px;
+  }
+  .card-container .card {
+    width: 100%;
+    max-width: 600px;
   }
 }

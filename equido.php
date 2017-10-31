@@ -87,5 +87,5 @@ $attachment
 mail($to, $subject, $message, $header);
 
   // Redirect
-header('Location: index.html');
+header('Location: user.html');
 ?>

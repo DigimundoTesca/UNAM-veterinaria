@@ -222,6 +222,11 @@ a.unam-dark:hover {
   color: #CCD44D !important;
   border-bottom: 1px dotted #BDBDBD; }
 
+.questContainer {
+  height: 300px !important;
+  max-height: 300px !important;
+  overflow-y: scroll; }
+
 @media screen and (min-width: 550px) {
   .logIn {
     max-width: 20rem; } }
@@ -245,6 +250,10 @@ a.unam-dark:hover {
     line-height: 1.1; }
 
   .logIn {
-    margin-right: 50px; } }
+    margin-right: 50px; }
+
+  .card-container .card {
+    width: 100%;
+    max-width: 600px; } }
 
 /*# sourceMappingURL=master.css.map */
