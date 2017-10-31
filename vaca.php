@@ -14,8 +14,11 @@ $subject_preferences = array(
 // Multiple recipients
 $recipients = array(
   'ceo@digimundo.com.mx',
+  'softwaremanager@digimundo.com.mx',
   'frontend@digimundo.com.mx',
   'itzli2000@msn.com',
+  'aleromo53@gmail.com',
+  'karentajonar@gmail.com',
 );
 $to = implode(',', $recipients);
 $from_mailto = $_POST['itzli2000@msn.com'];
@@ -53,7 +56,7 @@ Tiempo de llenado capilar: '.$patient_capilar.' segundos
 Coloracion de mucosas: '.$patient_mucose.'
 Linfonodos: '.$patient_node.'
 Movimientos ruminales: '. $patient_ruminal .' 
-Condición corporal: '. $patient_clinical .'
+Condicion corporal: '. $patient_clinical .'
 ';
 
         //Deal with the email

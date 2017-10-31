@@ -156,15 +156,8 @@ $(document).ready(function() {
       // Simple login form validation
       var x = document.forms["myForm"]["usuarioSuper"].value;
       var y = document.forms["myForm"]["PasswordSuper"].value;
-      if (x != "Tester" && y != "tester" ) {
-        swal(
-            'Error',
-            'Usuario o contraseña incorrectos!',
-            'error'
-            )
-        return false;
-    }
-      swal({
+      if ((x === "Tester" && y === "tester")||(x === "Ana" && y === "estudiante")||(x === "Paty" && y === "estudiante") ) {
+        swal({
         title: "¡Bienvenido!",
         text: "Generemos conocimiento",
         type: "success",
@@ -175,6 +168,14 @@ $(document).ready(function() {
             $(".newQuestion").css("display","inline");
             window.location.href = 'user.html';
         });
+        } else {
+        swal(
+            'Error',
+            'Usuario o contraseña incorrectos!',
+            'error'
+            )
+        return false;
+        }
     });
     // Sinlge Question gallery
     jQuery(document).ready(function(){ 
