@@ -113,14 +113,14 @@
                 <div class="logIn bcard bg-light mx-auto">
                   <div class="card-header unam-primary text-uppercase">Inicia Sesión</div>
                   <div class="card-body">
-                    <form>
+                    <form name="myForm" onsubmit="return validateForm()">
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Usuario</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
+                        <label for="usuarioSuper">Usuario</label>
+                        <input type="text" class="form-control" id="usuarioSuper" name="usuarioSuper" aria-describedby="emailHelp" placeholder="Usuario">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputPassword1">Contraseña</label>
-                        <input type="Contraseña" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                        <label for="PasswordSuper">Contraseña</label>
+                        <input type="Contraseña" class="form-control" id="PasswordSuper" name="PasswordSuper" placeholder="Contraseña">
                       </div>
                       <a id="LogInOut" href="#" class="nav-link unam-primary text-white text-center">Ingresar</a>
                     </form>
@@ -133,7 +133,7 @@
             </div>
             <hr class="my-4">
             <div class="row d-flex justify-content-center">
-              <div class="collapse" id="collapseExample">
+              <div class="collapse show" id="collapseExample">
                 <div class="card card-body speciesMenu">
                   <h5 class="text-center">Elige un espécimen</h5>
                   <div class="animals m-auto d-flex flex-row flex-wrap">
@@ -342,15 +342,11 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post" action="attach.php" class="container" name="vacaquest" id="needs-validation" novalidate enctype="multipart/form-data">
-            <h3>Realiza tu pregunta</h3>
+          <form method="post" action="attach.php" class="container" name="vacaquest" enctype="multipart/form-data">
+            <h3>Realiza tu consulta</h3>
             <div class="form-group">
-              <label for="pregunta">Pregunta (De forma corta y precisa)</label>
-              <input type="text" class="form-control" id="pregunta" name="pregunta" required>
-            </div>
-            <div class="form-group">
-              <label for="pregLarga">Anexa más información sobre tu pregunta</label>
-              <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5" required></textarea>
+              <label for="Consulta" class="col-form-label">Motivo de la consulta:</label>
+              <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
             </div>
             <hr>
             <h4>Reseña</h4>
@@ -358,12 +354,16 @@
               <input type="text" class="form-control" name="animal" value="Bovino">
             </div>
             <div class="form-group">
+              <label for="Raza" class="col-form-label">Raza</label>
+              <input type="text" class="form-control" id="Raza" name="Raza">
+            </div>
+            <div class="form-group">
               <label for="Edad" class="col-form-label">Edad</label>
               <input type="text" class="form-control" id="Edad" name="Edad" placeholder="2 años">
             </div>
             <div class="form-group">
               <label for="Peso" class="col-form-label">Peso (kg)</label>
-              <input type="text" class="form-control" id="Peso" name="Peso" placeholder="0 - 800kg">
+              <input type="text" class="form-control" id="Peso" name="Peso" placeholder="800">
             </div>
             <fieldset class="form-group">
               <div class="form-group">
@@ -384,16 +384,6 @@
                 </div>
               </div>
             </fieldset>
-            <div class="form-group">
-              <label for="Estado_fisiologico" class="col-form-label">Estado Fisiológico</label>
-              <input type="text" class="form-control" id="Estado_fisiologico" name="Estado_fisiologico" placeholder="Lactante / Gestante / Crecimiento">
-            </div>
-            <hr>
-            <div class="form-group">
-              <h4>Motivo de consulta</h4>
-              <label for="Consulta" class="col-form-label">Escriba el motivo:</label>
-              <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
-            </div>
             <hr>
             <div class="form-group">
               <h4>Exámen físico general</h4>
@@ -424,7 +414,7 @@
                 <input type="text" class="form-control" id="MovRum" name="MovRum">
               </div>
               <div class="form-group">
-                <label for="Clinica">Historia Clínica</label>
+                <label for="Clinica">Condición Corporal:</label>
                 <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
               </div>
               <div class="form-group">
@@ -446,26 +436,26 @@
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="caballoModalLabel">Nueva pregunta (Espécimen Equino)</h5>
+          <h5 class="modal-title" id="caballoModalLabel">Nueva pregunta (Espécimen Équido)</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <form method="post" action="contact.php" class="container" id="needs-validation" name="caballoquest" novalidate enctype="multipart/form-data">
-            <h3>Realiza tu pregunta</h3>
+          <form method="post" action="attach.php" class="container" name="caballoquest" enctype="multipart/form-data">
+            <h3>Realiza tu consulta</h3>
             <div class="form-group">
-              <label for="pregunta">Pregunta (De forma corta y precisa)</label>
-              <input type="text" class="form-control" id="pregunta" name="pregunta">
-            </div>
-            <div class="form-group">
-              <label for="pregLarga">Anexa más información sobre tu pregunta</label>
-              <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+              <label for="Consulta" class="col-form-label">Motivo de la consulta:</label>
+              <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
             </div>
             <hr>
             <h4>Reseña</h4>
+            <div class="form-group">
+              <label for="Raza" class="col-form-label">Raza</label>
+              <input type="text" class="form-control" id="Raza" name="Raza">
+            </div>
             <div class="form-group d-none">
-              <input type="text" class="form-control" name="animal" value="Equino">
+              <input type="text" class="form-control" name="animal" value="Équidos">
             </div>
             <div class="form-group">
               <label for="Edad" class="col-form-label">Edad</label>
@@ -500,12 +490,6 @@
             </div>
             <hr>
             <div class="form-group">
-              <h4>Motivo de consulta</h4>
-              <label for="Consulta" class="col-form-label">Escriba el motivo:</label>
-              <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
-            </div>
-            <hr>
-            <div class="form-group">
               <h4>Exámen físico general</h4>
               <div class="form-row">
                 <div class="form-group col-md-4">
@@ -530,12 +514,12 @@
                 <input type="text" class="form-control" id="Linfonodo" name="Linfonodo" placeholder="">
               </div>
               <div class="form-group">
-                <label for="Clinica">Historia Clínica</label>
+                <label for="Clinica">Condición Corporal:</label>
                 <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
               </div>
               <div class="form-group">
                 <label for="images">Imagenes</label>
-                <input type="file" name="images[]">
+                <input type="file" name="images">
               </div>
             </div>
             <div class="buttonSection d-flex flex-wrap justify-content-around">
@@ -558,20 +542,20 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post" name="ovejaquest" action="contact.php" class="container" id="needs-validation" novalidate enctype="multipart/form-data">
-            <h3>Realiza tu pregunta</h3>
+          <form method="post" name="ovejaquest" action="attach.php" class="container" enctype="multipart/form-data">
+            <h3>Realiza tu consulta</h3>
             <div class="form-group">
-              <label for="pregunta">Pregunta (De forma corta y precisa)</label>
-              <input type="text" class="form-control" id="pregunta" name="pregunta">
-            </div>
-            <div class="form-group">
-              <label for="pregLarga">Anexa más información sobre tu pregunta</label>
-              <textarea class="form-control" id="pregLarga" name="pregLarga" rows="5"></textarea>
+              <label for="Consulta" class="col-form-label">Motivo de la consulta:</label>
+              <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
             </div>
             <hr>
             <h4>Reseña</h4>
             <div class="form-group d-none">
               <input type="text" class="form-control" name="animal" value="Ovino">
+            </div>
+            <div class="form-group">
+              <label for="Raza" class="col-form-label">Raza</label>
+              <input type="text" class="form-control" id="Raza" name="Raza" placeholder="2 años">
             </div>
             <div class="form-group">
               <label for="Edad" class="col-form-label">Edad</label>
@@ -601,15 +585,18 @@
               </div>
             </fieldset>
             <div class="form-group">
-              <label for="Estado_fisiologico" class="col-form-label">Estado Fisiológico</label>
+              <label for="Estado_fisiologico" class="col-form-label">Etapa Fisiológica</label>
               <input type="text" class="form-control" id="Estado_fisiologico" name="Estado_fisiologico" placeholder="Lactante / Gestante / Crecimiento">
             </div>
-            <hr>
             <div class="form-group">
-              <h4>Motivo de consulta</h4>
-              <label for="Consulta" class="col-form-label">Escriba el motivo:</label>
-              <input type="text" class="form-control" id="Consulta" name="Consulta" placeholder="Descripción de la consulta">
+              <label for="zootecnico" class="col-form-label">Fin zootécnico</label>
+              <input type="text" class="form-control" id="zootecnico" name="zootecnico">
             </div>
+            <div class="form-group">
+              <label for="produccion" class="col-form-label">Sistema de producción</label>
+              <input type="text" class="form-control" id="produccion" name="produccion">
+            </div>
+            <hr>
             <hr>
             <div class="form-group">
               <h4>Exámen físico general</h4>
@@ -628,8 +615,6 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="Capilar" class="col-form-label">Tiempo de llenado capilar:</label>
-                <input type="text" class="form-control" id="Capilar" name="Capilar" placeholder="">
                 <label for="Mucosas" class="col-form-label">Coloración de Mucosas:</label>
                 <input type="text" class="form-control" id="Mucosas" name="Mucosas" placeholder="">
                 <label for="Linfonodo" class="col-form-label">Linfonodos:</label>
@@ -640,12 +625,12 @@
                 <input type="text" class="form-control" id="MovRum" name="MovRum">
               </div>
               <div class="form-group">
-                <label for="Clinica">Historia Clínica</label>
+                <label for="Clinica">Condición corporal</label>
                 <textarea class="form-control" id="Clinica" name="Clinica" rows="3"></textarea>
               </div>
               <div class="form-group">
                 <label for="images">Imagenes</label>
-                <input type="file" name="images[]">
+                <input type="file" name="images">
               </div>
             </div>
             <div class="buttonSection d-flex flex-wrap justify-content-around">
@@ -668,7 +653,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post" name="cerdoquest" action="contact.php" class="container" id="needs-validation" novalidate enctype="multipart/form-data">
+          <form method="post" name="cerdoquest" action="attach.php" class="container" enctype="multipart/form-data">
             <h3>Realiza tu pregunta</h3>
             <div class="form-group">
               <label for="pregunta">Pregunta (De forma corta y precisa)</label>
@@ -751,7 +736,7 @@
               </div>
               <div class="form-group">
                 <label for="images">Imagenes</label>
-                <input type="file" name="images[]">
+                <input type="file" name="images">
               </div>
             </div>
             <div class="buttonSection d-flex flex-wrap justify-content-around">
@@ -774,7 +759,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post" name="conejoquest" action="contact.php" class="container" id="needs-validation" novalidate enctype="multipart/form-data">
+          <form method="post" name="conejoquest" action="attach.php" class="container" enctype="multipart/form-data">
             <h3>Realiza tu pregunta</h3>
             <div class="form-group">
               <label for="pregunta">Pregunta (De forma corta y precisa)</label>
@@ -856,7 +841,7 @@
               </div>
               <div class="form-group">
                 <label for="images">Imagenes</label>
-                <input type="file" name="images[]">
+                <input type="file" name="images">
               </div>
             </div>
             <div class="buttonSection d-flex flex-wrap justify-content-around">
@@ -879,7 +864,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post" name="galloquest" action="contact.php" class="container" id="needs-validation" novalidate enctype="multipart/form-data">
+          <form method="post" name="galloquest" action="attach.php" class="container" enctype="multipart/form-data">
             <h3>Realiza tu pregunta</h3>
             <div class="form-group">
               <label for="pregunta">Pregunta (De forma corta y precisa)</label>
@@ -962,7 +947,7 @@
               </div>
               <div class="form-group">
                 <label for="images">Imagenes</label>
-                <input type="file" name="images[]">
+                <input type="file" name="images">
               </div>
             </div>
             <div class="buttonSection d-flex flex-wrap justify-content-around">
@@ -985,7 +970,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post" name="avequest" action="contact.php" class="container" id="needs-validation" novalidate enctype="multipart/form-data">
+          <form method="post" name="avequest" action="attach.php" class="container" enctype="multipart/form-data">
             <h3>Realiza tu pregunta</h3>
             <div class="form-group">
               <label for="pregunta">Pregunta (De forma corta y precisa)</label>
@@ -1068,7 +1053,7 @@
               </div>
               <div class="form-group">
                 <label for="images">Imagenes</label>
-                <input type="file" name="images[]">
+                <input type="file" name="images">
               </div>
             </div>
             <div class="buttonSection d-flex flex-wrap justify-content-around">
@@ -1091,7 +1076,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post" name="perroquest" action="contact.php" class="container" id="needs-validation" novalidate enctype="multipart/form-data">
+          <form method="post" name="perroquest" action="attach.php" class="container" enctype="multipart/form-data">
             <h3>Realiza tu pregunta</h3>
             <div class="form-group">
               <label for="pregunta">Pregunta (De forma corta y precisa)</label>
@@ -1174,7 +1159,7 @@
               </div>
               <div class="form-group">
                 <label for="images">Imagenes</label>
-                <input type="file" name="images[]">
+                <input type="file" name="images">
               </div>
             </div>
             <div class="buttonSection d-flex flex-wrap justify-content-around">
@@ -1197,7 +1182,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post" name="gatoquest" action="contact.php" class="container" id="needs-validation" novalidate enctype="multipart/form-data">
+          <form method="post" name="gatoquest" action="attach.php" class="container" enctype="multipart/form-data">
             <h3>Realiza tu pregunta</h3>
             <div class="form-group">
               <label for="pregunta">Pregunta (De forma corta y precisa)</label>
@@ -1280,7 +1265,7 @@
               </div>
               <div class="form-group">
                 <label for="images">Imagenes</label>
-                <input type="file" name="images[]">
+                <input type="file" name="images">
               </div>
             </div>
             <div class="buttonSection d-flex flex-wrap justify-content-around">
@@ -1303,7 +1288,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post" name="faunaquest" action="contact.php" class="container" id="needs-validation" novalidate enctype="multipart/form-data">
+          <form method="post" name="faunaquest" action="attach.php" class="container" enctype="multipart/form-data">
             <h3>Realiza tu pregunta</h3>
             <div class="form-group">
               <label for="pregunta">Pregunta (De forma corta y precisa)</label>
@@ -1386,7 +1371,7 @@
               </div>
               <div class="form-group">
                 <label for="images">Imagenes</label>
-                <input type="file" name="images[]">
+                <input type="file" name="images">
               </div>
             </div>
             <div class="buttonSection d-flex flex-wrap justify-content-around">

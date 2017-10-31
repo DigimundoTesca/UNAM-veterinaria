@@ -153,9 +153,20 @@ $(document).ready(function() {
     // Login form handler
     $( "#LogInOut" ).click(function(e) {
       e.preventDefault();
+      // Simple login form validation
+      var x = document.forms["myForm"]["usuarioSuper"].value;
+      var y = document.forms["myForm"]["PasswordSuper"].value;
+      if (x != "Tester" && y != "tester" ) {
+        swal(
+            'Error',
+            'Usuario o contraseña incorrectos!',
+            'error'
+            )
+        return false;
+    }
       swal({
-        title: "¡Felicidades!",
-        text: "Bienvenido Juan Perez",
+        title: "¡Bienvenido!",
+        text: "Generemos conocimiento",
         type: "success",
         confirmButtonText: "Vamos",
         confirmButtonClass: 'btn btn-success'
@@ -174,5 +185,7 @@ $(document).ready(function() {
             $('[data-toggle="popover"]').popover();   
         }
     });
+
+
 });
 
